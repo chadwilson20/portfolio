@@ -180,3 +180,63 @@ nav {
 .component-footer_background_color__grey_email_when_clicked::selection {
     background-color: transparent;
 }
+
+.component-drop_down_menu_open_animation {
+    animation-name: drop_down_menu_open;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+}
+
+.component-drop_down_menu_close_animation {
+    animation-name: drop_down_menu_close;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+}
+
+.component-drop_down_menu_show_animation {
+    animation-name: drop_down_menu_show;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+}
+
+.component-drop_down_menu_hide_animation {
+    animation-name: drop_down_menu_hide;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+}
+
+@keyframes drop_down_menu_show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes drop_down_menu_hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes drop_down_menu_open {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.01;
+    }
+}
+
+@keyframes drop_down_menu_close {
+    from {
+        opacity: 0.01;
+    }
+    to {
+        opacity: 1;
+    }
+}
