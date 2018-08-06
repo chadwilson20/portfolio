@@ -50,7 +50,7 @@ nav {
 }
 
 .component-drop_down_menu--variant-modifier {
-    display: none;
+    opacity: 0;
     margin: 5%;
     z-index: 10;
     position: fixed;
@@ -196,6 +196,7 @@ nav {
 .component-drop_down_menu_show_animation {
     animation-name: drop_down_menu_show;
     animation-fill-mode: forwards;
+    animation-delay: .3s;
     animation-duration: .5s;
 }
 

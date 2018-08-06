@@ -1,6 +1,11 @@
 $(document).ready(function() {
     $("#open_menu").click(function() {
         $("#menu").css({"display":"flex"});
+        if($("#menu").hasClass("component-drop_down_menu_hide_animation"))
+            {
+                $("#menu").removeClass("component-drop_down_menu_hide_animation");
+            }
+        $("#menu").addClass("component-drop_down_menu_show_animation");
         $("#component-main_content").css({"pointer-events":"none"});
         if($("#component-main_content").hasClass("component-drop_down_menu_close_animation"))
             {
@@ -10,6 +15,11 @@ $(document).ready(function() {
     });
     $("#close_menu").click(function() {
         $("#menu").css({"display":"none"});
+        if($("#menu").hasClass("component-drop_down_menu_show_animation"))
+            {
+                $("#menu").removeClass("component-drop_down_menu_show_animation");
+            }
+        $("#menu").addClass("component-drop_down_menu_hide_animation");
         if($("#component-main_content").hasClass("component-drop_down_menu_open_animation"))
             {
                 $("component-main_content").removeClass("component-drop_down_menu_open_animation");
