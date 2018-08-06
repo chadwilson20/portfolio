@@ -45,7 +45,7 @@ nav {
     line-height: 50px;
 }
 
-#component-surrounding_div {
+.component-surrounding_div {
     position: relative;
 }
 
@@ -64,13 +64,13 @@ nav {
     left: 0;
 }
 
-#component-header__left-div__nav > a {
+.component-header__left-div__nav > a {
     font-size: 23px;
     border-bottom: none;
     color: #34302D;
 }
 
-#component-header__left-div__nav_first_a {
+.component-header__left-div__nav_active_a {
     color: #86C543 !important;
 }
 
@@ -176,8 +176,13 @@ nav {
     border-bottom-color: #E6E6E6;
 }
 
+.component-drop_down_menu__email_when_clicked {
+    color: #86C543 !important;
+}
+
 .component-footer_background_color__green_emails_when_clicked::selection,
-.component-footer_background_color__grey_email_when_clicked::selection {
+.component-footer_background_color__grey_email_when_clicked::selection,
+.component-drop_down_menu__email_when_clicked::selection {
     background-color: transparent;
 }
 
