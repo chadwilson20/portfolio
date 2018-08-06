@@ -54,4 +54,13 @@ $(document).ready(function() {
         selection.addRange(range);
         document.execCommand('copy');
     })
+    $("#drop_down_menu_email").click(function() {
+        $("#drop_down_menu_email").addClass("component-drop_down_menu__email_when_clicked");
+        var range = document.createRange();
+        var selection = window.getSelection();
+        range.selectNodeContents(document.getElementById('drop_down_menu_email'));
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+    })
 });
