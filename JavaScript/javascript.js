@@ -1,6 +1,9 @@
 $(document).ready(function() {
     $("#open_menu").click(function() {
-        $("#menu").css({"display":"flex"});
+        $("#menu").css({
+            "pointer-events":"auto",
+            "display":"flex"
+        });
         if($("#menu").hasClass("component-drop_down_menu_hide_animation"))
             {
                 $("#menu").removeClass("component-drop_down_menu_hide_animation");
@@ -14,7 +17,10 @@ $(document).ready(function() {
         $("#component-main_content").addClass("component-drop_down_menu_open_animation");
     });
     $("#close_menu").click(function() {
-        $("#menu").css({"display":"none"});
+        $("#menu").css({
+            "pointer-events":"none",
+            "display":"none"
+        });
         if($("#menu").hasClass("component-drop_down_menu_show_animation"))
             {
                 $("#menu").removeClass("component-drop_down_menu_show_animation");

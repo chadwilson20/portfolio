@@ -53,9 +53,12 @@ nav {
     opacity: 0;
     margin: 5%;
     z-index: 10;
+    width: 90%;
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
+    pointer-events: none;
 }
 
 #component-main_content {
@@ -184,6 +187,7 @@ nav {
 .component-footer_background_color__grey_email_when_clicked::selection,
 .component-drop_down_menu__email_when_clicked::selection {
     background-color: transparent;
+    -moz-appearance: none;
 }
 
 .component-drop_down_menu_open_animation {
