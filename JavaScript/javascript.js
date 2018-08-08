@@ -1,32 +1,33 @@
 //This function is to copy the emails on each page to the clipboard and to style the link
 //once it is clicked when the emails are clicked.
-function DropDownMenu(id) {
-    if(id == "green_email_one") {
+function CopyEmail(id) {
+    if(id === "green_email_one") {
         $("#green_email_one").addClass("component-footer_background_color__green_emails_when_clicked");
     }
-    else if(id == "green_email_two") {
+    else if(id === "green_email_two") {
         $("#green_email_two").addClass("component-footer_background_color__green_emails_when_clicked");
     }
-    else if(id == "grey_email") {
+    else if(id === "grey_email") {
         $("#grey_email").addClass("component-footer_background_color__grey_email_when_clicked");
     }
-    else if(id == "drop_down_menu_email") {
+    else if(id === "drop_down_menu_email") {
         $("#drop_down_menu_email").addClass("component-drop_down_menu__email_when_clicked");
     }
     var range = document.createRange();
     var selection = window.getSelection();
-    if(id == "green_email_one") {
+    if(id === "green_email_one") {
         range.selectNodeContents(document.getElementById('green_email_one'));
     }
-    else if(id == "green_email_two") {
+    else if(id === "green_email_two") {
         range.selectNodeContents(document.getElementById('green_email_two'));
     }
-    else if(id == "grey_email") {
+    else if(id === "grey_email") {
         range.selectNodeContents(document.getElementById('grey_email'));
     }
-    else if(id == "drop_down_menu_email") {
+    else if(id === "drop_down_menu_email") {
         range.selectNodeContents(document.getElementById('drop_down_menu_email'));
     }
+    selection.removeAllRanges();
     selection.addRange(range);
     document.execCommand('copy');
     selection.removeAllRanges();
