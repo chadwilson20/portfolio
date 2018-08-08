@@ -43,6 +43,7 @@ $(document).ready(function() {
         selection.removeAllRanges();
         selection.addRange(range);
         document.execCommand('copy');
+        selection.removeAllRanges();
     });
     $("#green_email_two").click(function() {
         $("#green_email_two").addClass("component-footer_background_color__green_emails_when_clicked");
@@ -52,6 +53,7 @@ $(document).ready(function() {
         selection.removeAllRanges();
         selection.addRange(range);
         document.execCommand('copy');
+        selection.removeAllRanges();
     })
     $("#grey_email").click(function() {
         $("#grey_email").addClass("component-footer_background_color__grey_email_when_clicked")
@@ -61,6 +63,7 @@ $(document).ready(function() {
         selection.removeAllRanges();
         selection.addRange(range);
         document.execCommand('copy');
+        selection.removeAllRanges();
     })
     $("#drop_down_menu_email").click(function() {
         $("#drop_down_menu_email").addClass("component-drop_down_menu__email_when_clicked");
@@ -70,5 +73,6 @@ $(document).ready(function() {
         selection.removeAllRanges();
         selection.addRange(range);
         document.execCommand('copy');
+        selection.removeAllRanges();
     })
 });
