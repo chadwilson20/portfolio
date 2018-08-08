@@ -1,6 +1,18 @@
 //This function is to copy the emails on each page to the clipboard and to style the link
 //once it is clicked when the emails are clicked.
 function CopyEmail(id) {
+    SelectEmailStyling(id);
+    var range = document.createRange();
+    var selection = window.getSelection();
+    SelectEmailCopying(id, range);
+    RemoveAllRanges(selection);
+    selection.addRange(range);
+    document.execCommand('copy');
+    RemoveAllRanges(selection);
+}
+
+//This function styles the email that you click on.
+function SelectEmailStyling(id) {
     if(id === "green_email_one") {
         $("#green_email_one").addClass("component-footer_background_color__green_emails_when_clicked");
     }
@@ -13,8 +25,10 @@ function CopyEmail(id) {
     else if(id === "drop_down_menu_email") {
         $("#drop_down_menu_email").addClass("component-drop_down_menu__email_when_clicked");
     }
-    var range = document.createRange();
-    var selection = window.getSelection();
+}
+
+//this function creates the range for the text of the email that is to be copied.
+function SelectEmailCopying(id, range) {
     if(id === "green_email_one") {
         range.selectNodeContents(document.getElementById('green_email_one'));
     }
@@ -27,9 +41,10 @@ function CopyEmail(id) {
     else if(id === "drop_down_menu_email") {
         range.selectNodeContents(document.getElementById('drop_down_menu_email'));
     }
-    selection.removeAllRanges();
-    selection.addRange(range);
-    document.execCommand('copy');
+}
+
+//This function removes all ranges once copying is done.
+function RemoveAllRanges(selection) {
     selection.removeAllRanges();
 }
 
