@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //This function is to display the drop-down menu when the menu button is clicked
     $("#open_menu").click(function() {
         $("#menu").css({
             "pointer-events":"auto",
@@ -16,6 +17,7 @@ $(document).ready(function() {
             }
         $("#component-main_content").addClass("component-drop_down_menu_open_animation");
     });
+    //This function is to close the drop-down menu when the exit button is clicked
     $("#close_menu").click(function() {
         $("#menu").css({
             "pointer-events":"none",
