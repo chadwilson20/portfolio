@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: normal;
 }
  
-h1,h2,h3,h4,h5,h6,p,a {
+h1,h2,h3,h4,h5,h6,p {
     color: #34302D;
 }
 
@@ -28,21 +28,6 @@ p,.component-footer_background_color__h2_after_first {
 in the intro */
 p,#component-description_div__h2 {
     line-height: 30px;
-}
-
-a {
-    text-decoration: none;
-    border-bottom: 1px solid white;
-}
-
-a:visited {
-    color: #86C543;
-    border-bottom-color: #86C543;
-}
-
-/* Had to add !important to override previous white border-bottom color */
-.component-footer_background_color__green_emails_when_clicked {
-    border-bottom-color: #86C543 !important;
 }
 
 /* To put anchor tags on seperate lines */
@@ -91,14 +76,12 @@ nav {
 }
 
 .component-header__left-div__nav > a {
-    color: #34302D;
     font-size: 23px;
     border-bottom: none;
 }
 
 /* !important to remove previous color styling */
 .component-header__left-div__nav_active_a,
-.component-drop_down_menu__email_when_clicked,
 .component-div_margin__email_color {
     color: #86C543 !important;
 }
@@ -121,8 +104,7 @@ to hide other div content before scrolling */
 }
 
 .component-div_margin_h2_after_description,
-.component-footer_background_color__a,
-.component-footer_background_color__a:visited {
+.component-footer_background_color__a {
     color: #E6E6E6;
 }
 
@@ -157,7 +139,6 @@ to hide other div content before scrolling */
 /* border-bottom-color to blend in color before clicking on it.
 display: inline-block to create the margin-botton I needed to seperate content */
 .component-footer_background_color__email_border_color {
-    border-bottom-color: #34302D;
     display: inline-block;
     margin-bottom: 20px;
 }
@@ -195,20 +176,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
 }
 
 .component-footer_background_color__a {
-    border-bottom: 1px solid #34302D;
     font-size: 17px;
-}
-
-.component-footer_background_color__a:visited,
-.component-footer_background_color__grey_email_when_clicked {
-    border-bottom-color: #E6E6E6;
-}
-
-/* without this, browsers will leave text highlighted */
-.component-footer_background_color__green_emails_when_clicked::selection,
-.component-footer_background_color__grey_email_when_clicked::selection,
-.component-drop_down_menu__email_when_clicked::selection {
-    background-color: transparent;
 }
 
 .component-drop_down_menu_open_animation,

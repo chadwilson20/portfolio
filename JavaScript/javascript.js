@@ -1,7 +1,6 @@
 //This function is to copy the emails on each page to the clipboard and to style the link
 //once it is clicked when the emails are clicked.
 function CopyEmail(id) {
-    SelectEmailStyling(id);
     var range = document.createRange();
     var selection = window.getSelection();
     SelectEmailCopying(id, range);
@@ -9,22 +8,6 @@ function CopyEmail(id) {
     selection.addRange(range);
     document.execCommand('copy');
     RemoveAllRanges(selection);
-}
-
-//This function styles the email that you click on.
-function SelectEmailStyling(id) {
-    if(id === "green_email_one") {
-        $("#green_email_one").addClass("component-footer_background_color__green_emails_when_clicked");
-    }
-    else if(id === "green_email_two") {
-        $("#green_email_two").addClass("component-footer_background_color__green_emails_when_clicked");
-    }
-    else if(id === "grey_email") {
-        $("#grey_email").addClass("component-footer_background_color__grey_email_when_clicked");
-    }
-    else if(id === "drop_down_menu_email") {
-        $("#drop_down_menu_email").addClass("component-drop_down_menu__email_when_clicked");
-    }
 }
 
 //this function creates the range for the text of the email that is to be copied.
@@ -48,31 +31,36 @@ function RemoveAllRanges(selection) {
     selection.removeAllRanges();
 }
 
-/* Start of link reset code */
-window.onload = function() {
+$(document).ready(function() {
+    /* Lines 36-58 resets links on browser refresh */
     var links = document.links;
     for(var i = 0; i < links.length; i++)
     {
         var link = links[i];
+        $(link).css({
+            "text-decoration":"none"
+        });
         if($(link).hasClass("component-footer_background_color__a")) {
-            $(link).css({"border-bottom":"1px solid #34302D"});
+            $(link).css({
+                "color":"#E6E6E6",
+                "border-bottom":"1px solid #34302D"
+            });
         }
         else {
-            link.style.color = "#34302D";
-            link.style.textDecoration = "none";
-            link.style.borderBottom = "1px solid white";
+            $(link).css({
+                "color":"#34302D",
+                "border-bottom":"1px solid white"
+            });
         }
     }
     $("#green_email_two").css({
         "border-bottom-color":"#34302D"
     });
-}
-
-$(document).ready(function() {
+    
+    /* This function changes styling of links when they are clicked */
     $("a").click(function() {
         if($(this).hasClass("component-footer_background_color__a")) {
             $(this).css({
-                "color":"#E6E6E6",
                 "border-bottom-color":"#E6E6E6"
             });
         }
@@ -83,13 +71,15 @@ $(document).ready(function() {
             });
         }
     });
-    /* End of link reset code */
+    
+    
+    /* This function changes styling of drop down menu email when clicked */
     $("#drop_down_menu_email").click(function() {
         $("#drop_down_menu_email").css({
-            "color":"#86C543",
             "border-bottom-color":"white"
         });
     });
+    
     //This function is to display the drop-down menu when the menu button is clicked
     $("#open_menu").click(function() {
         $("#menu").css({
@@ -108,6 +98,7 @@ $(document).ready(function() {
         }
         $("#component-main_content").addClass("component-drop_down_menu_open_animation");
     });
+    
     //This function is to close the drop-down menu when the exit button is clicked
     $("#close_menu").click(function() {
         $("#menu").css({
