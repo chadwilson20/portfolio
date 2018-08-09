@@ -48,7 +48,48 @@ function RemoveAllRanges(selection) {
     selection.removeAllRanges();
 }
 
+/* Start of link reset code */
+window.onload = function() {
+    var links = document.links;
+    for(var i = 0; i < links.length; i++)
+    {
+        var link = links[i];
+        if($(link).hasClass("component-footer_background_color__a")) {
+            $(link).css({"border-bottom":"1px solid #34302D"});
+        }
+        else {
+            link.style.color = "#34302D";
+            link.style.textDecoration = "none";
+            link.style.borderBottom = "1px solid white";
+        }
+    }
+    $("#green_email_two").css({
+        "border-bottom-color":"#34302D"
+    });
+}
+
 $(document).ready(function() {
+    $("a").click(function() {
+        if($(this).hasClass("component-footer_background_color__a")) {
+            $(this).css({
+                "color":"#E6E6E6",
+                "border-bottom-color":"#E6E6E6"
+            });
+        }
+        else {
+            $(this).css({
+                "color":"#86C543",
+                "border-bottom-color":"#86C543"
+            });
+        }
+    });
+    /* End of link reset code */
+    $("#drop_down_menu_email").click(function() {
+        $("#drop_down_menu_email").css({
+            "color":"#86C543",
+            "border-bottom-color":"white"
+        });
+    });
     //This function is to display the drop-down menu when the menu button is clicked
     $("#open_menu").click(function() {
         $("#menu").css({
