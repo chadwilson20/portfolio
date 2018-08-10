@@ -32,7 +32,7 @@ function RemoveAllRanges(selection) {
 }
 
 $(document).ready(function() {
-    /* Lines 36-58 resets links on browser refresh */
+    /* Lines 36-60 resets links on browser refresh */
     var links = document.links;
     for(var i = 0; i < links.length; i++)
     {
@@ -53,6 +53,8 @@ $(document).ready(function() {
             });
         }
     }
+    /* This link does not have component-footer_background_color__a class
+    so I had to write code for it separately */
     $("#green_email_two").css({
         "border-bottom-color":"#34302D"
     });
