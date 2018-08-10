@@ -2,53 +2,66 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- This is so viewing website is scaled well on all devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- This is where I am getting all my icons from -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
         <!-- Image by fontawesome.com. Here is link to image: https://fontawesome.com/icons/project-diagram?style=solid -->
         <link rel="icon" href="Images/project-diagram-solid.png">
+        <!-- To remove default browser styling -->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+        <!-- My style sheet -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- My script -->
         <script src="JavaScript/javascript.js"></script>
         <title>Projects</title>
     </head>
     <body>
+        <!-- Div container to create drop-down menu overlay functionality -->
         <div class="component-surrounding_div">
             <!-- Drop-down menu -->
             <div class="component-drop_down_menu--variant-modifier" id="menu">
+                <!-- Navigation -->
                 <div class="component-header__left-div">
                     <nav class="component-header__left-div__nav">
                         <a href="index.html">About</a>
                         <a href="projects.html" class="component-header__left-div__nav_active_a">Projects</a>
-                        <a href="javascript:;" id="drop_down_menu_email">chadwilson959@yahoo.com</a>
+                        <a href="javascript:;" id="drop_down_menu_email" onclick="CopyEmail('drop_down_menu_email')">chadwilson959@yahoo.com</a>
                     </nav>
                 </div>
+                <!-- Exit button -->
                 <div class="component-header__right-div">
                     <i class="fas fa-times fa-3x" id="close_menu"></i>
                 </div>
             </div>
             <!-- Main Content -->
             <div id="component-main_content">
-                <div class="component-header_green_bar"></div> <!-- Green Bar -->
+                 <!-- Green Bar -->
+                <div class="component-header_green_bar"></div>
                 <header class="component-div_margin">
                     <div class="component-div_margin__header_div">
                         <div class="component-header__left-div">
                             <h1>Chad Wilson</h1>
                         </div>
+                        <!-- Open menu button -->
                         <div class="component-header__right-div">
                             <i class="fas fa-bars fa-2x" id="open_menu"></i>
                         </div>
                     </div>
                 </header>
+                <!-- Projects section -->
                 <div class="component-div_margin" id="component-div_margin_projects_page">
                     <h2 class="component-div_margin_h2_after_description">Projects</h2>
                     <p>Sorry, nothing to show here at the moment except for this website I built.</p>
                     <p>However, I am in the process of developing a prayer application with a group of other developers I worked with last summer during an internship that will soon be deployed!</p>
                 </div>
+                <!--Footer-->
                 <footer class="component-footer_background_color">
                     <div class="component-footer_background_color__first_div">
                         <h2 class="component-footer_background_color__h2 component-footer_background_color__first_h2_margin">Chad Wilson</h2>
-                        <a href="javascript:;" class="component-div_margin__email_color component-footer_background_color__email_border_color" id="green_email_two">chadwilson959@yahoo.com</a>
+                        <a href="javascript:;" class="component-div_margin__email_color component-footer_background_color__email_border_color" id="green_email_two" onclick="CopyEmail('green_email_two')">chadwilson959@yahoo.com</a>
                         <p class="component-footer_background_color__a component-footer_background_color__p">I use my front-end web development skills to create beautiful and efficent websites.</p>
                     </div>
                     <div class="component-footer_background_color__div">
@@ -60,7 +73,7 @@
                     </div>
                     <div class="component-footer_background_color__div">
                         <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Contact</h2>
-                        <a href="javascript:;" class="component-footer_background_color__a" id="grey_email">chadwilson959@yahoo.com</a>
+                        <a href="javascript:;" class="component-footer_background_color__a" id="grey_email" onclick="CopyEmail('grey_email')">chadwilson959@yahoo.com</a>
                     </div>
                     <div>
                         <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Social</h2>
