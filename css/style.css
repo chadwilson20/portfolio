@@ -92,15 +92,10 @@ seperate divs on the page */
     margin: 5% 5% 110px 5%;
 }
 
-/* Margin need to be smaller to see all of intro on projects page */
-#component-header_div_margin_projects_page {
-    margin-bottom: 40px;
-}
-
 /* Intro div on projects page needed more of a bottom margin
 to hide other div content before scrolling */
 #component-div_margin_projects_page {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .component-div_margin_h2_after_description,
