@@ -24,6 +24,9 @@ function SelectEmailCopying(id, range) {
     else if(id === "drop_down_menu_email") {
         range.selectNodeContents(document.getElementById('drop_down_menu_email'));
     }
+    else if(id === "wider_screen_drop_down_menu_email") {
+        range.selectNodeContents(document.getElementById('wider_screen_drop_down_menu_email'));
+    }
 }
 
 //This function removes all ranges once copying is done.
@@ -59,6 +62,10 @@ $(document).ready(function() {
         "border-bottom-color":"#34302D"
     });
     
+    $("#wider_screen_drop_down_menu_email").css({
+        "color":"#E6E6E6"
+    });
+    
     /* This function changes styling of links when they are clicked */
     $("a").click(function() {
         if($(this).hasClass("component-footer_background_color__a")) {
@@ -72,6 +79,12 @@ $(document).ready(function() {
                 "border-bottom-color":"#86C543"
             });
         }
+    });
+    
+    $("#wider_screen_drop_down_menu_email").click(function() {
+        $("#wider_screen_drop_down_menu_email").css({
+            "border-bottom-color":"white"
+        });
     });
     
     

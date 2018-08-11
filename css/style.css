@@ -26,7 +26,7 @@ h2 {
 
 /* #component-description_div__h2 has this to create more spacing
 in the intro */
-p,#component-description_div__h2 {
+p, #component-description_div__h2 {
     line-height: 30px;
 }
 
@@ -66,7 +66,8 @@ nav {
 
 /* display:flex so elements inside div line up side-by-side */
 .component-drop_down_menu--variant-modifier,
-.component-div_margin__header_div {
+.component-div_margin__header_div,
+#wider_screen_footer_div_flex {
     display: flex;
 }
 
@@ -89,13 +90,7 @@ nav {
 /* To create spacing between borders of webpage and spacing inbetween 
 seperate divs on the page */
 .component-div_margin {
-    margin: 5% 5% 110px 5%;
-}
-
-/* Intro div on projects page needed more of a bottom margin
-to hide other div content before scrolling */
-#component-div_margin_projects_page {
-    margin-bottom: 120px;
+    margin: 5% 5% 120px 5%;
 }
 
 .component-div_margin_h2_after_description,
@@ -141,6 +136,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
 /* first div in footer needed more margin then the rest */
 .component-footer_background_color__first_div {
     margin-bottom: 60px;
+    width: 70%;
 }
 
 .component-footer_background_color__h2 {
@@ -232,10 +228,6 @@ display: inline-block to create the margin-botton I needed to seperate content *
     line-height: 32px;
 }
 
-a:last-child {
-    margin-right: 0px !important;
-}
-
 #wider_screen_size_header_navigation_nav a {
     margin-right: 25px;
 }
@@ -244,7 +236,15 @@ a:last-child {
     display: none;
 }
 
-#drop_down_menu_email {
+#wider_screen_drop_down_menu_email {
+    display: none;
+}
+
+#wider_screen_footer_div {
+    display: none;
+}
+
+#widest_screen_footer_div {
     display: none;
 }
 
@@ -261,6 +261,9 @@ a:last-child {
     .component-header__right-div {
         width: 50%;
     }
+    #projects_link {
+        margin-right: 0px !important;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -269,9 +272,52 @@ a:last-child {
     }
     .component-header__right-div {
         width: 75%;
+    }    
+    #projects_link {
+        margin-right: 25px !important;
     }
-    #drop_down_menu_email {
-        display: inline;
+    #wider_screen_drop_down_menu_email {
         color: #E6E6E6 !important;
+        display: inline;
+        margin-right: 0px !important;
+    }
+    #mobile_footer_div {
+        display: none;
+    }
+    .component-footer_background_color__div {
+        width: 50%;
+    }
+    #wider_screen_footer_div {
+        display: block;
+    }
+    .component-footer_background_color__h2_after_first {
+        margin-bottom: 35px;
+    }
+    .component-footer_background_color__first_div {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #wider_screen_footer_div {
+        display: none;
+    }
+    #widest_screen_footer_div {
+        display: flex;
+    }
+    #wider_screen_footer_div_flex {
+        width: 60%;
+    }
+    .component-footer_background_color__div {
+        width: 25%;
+    }
+    #social_div_width {
+        width: 40%;
+    }
+    .component-footer_background_color__first_div {
+        width: 30%;
+    }
+    .component-div_width {
+        width: 60%;
     }
 }

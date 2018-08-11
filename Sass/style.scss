@@ -30,14 +30,18 @@
 }
 
 p {
-    @include responsive-text(font-size, 373px, 1200px, 18px, 30px);
+    @include responsive-text(font-size, 373px, 1200px, 18px, 25px);
+}
+
+p, #component-description_div__h2 {
+    @include responsive-text(line-height, 373px, 1200px, 30px, 50px);
 }
 
 .component-footer_background_color__a, #green_email_two {
     @include responsive-text(font-size, 373px, 1200px, 17px, 18px);
 }
 
-#wider_screen_size_header_navigation_nav a{
+#wider_screen_size_header_navigation_nav a {
     @include responsive-text(font-size, 373px, 1200px, 15px, 20px);
 }
 
@@ -46,5 +50,5 @@ h1 {
 }
 
 a, .component-footer_background_color__first_h2_margin {
-    @include responsive-text(font-size, 373px, 1200px, 20px, 30px);
+    @include responsive-text(font-size, 373px, 1200px, 20px, 25px);
 }
