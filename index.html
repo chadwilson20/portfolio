@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
         <!-- My style sheet -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- My Sass style sheet -->
+        <link rel="stylesheet" href="css/sass_style.css">
         <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- My script -->
@@ -46,8 +48,15 @@
                             <h1>Hi, I'm Chad.</h1>
                         </div>
                         <!-- Open menu button -->
-                        <div class="component-header__right-div">
+                        <div class="component-header__right-div" id="open_menu_div">
                             <i class="fas fa-bars fa-2x" id="open_menu"></i>
+                        </div>
+                        <div class="component-header__right-div" id="wider_screen_size_header_navigation">
+                            <div id="wider_screen_size_header_navigation_nav">
+                                <a href="index.html" class="component-header__left-div__nav_active_a">About</a>
+                                <a href="projects.html">Projects</a>
+                                <a href="javascript:;" id="drop_down_menu_email" onclick="CopyEmail('drop_down_menu_email')">chadwilson959@yahoo.com</a>
+                            </div>
                         </div>
                     </div>
                 </header>

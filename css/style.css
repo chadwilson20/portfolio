@@ -16,11 +16,11 @@ h1 {
     font-size: 30px;
 }
 
-h2,a {
+h2 {
     font-size: 20px;
 }
 
-p,.component-footer_background_color__h2_after_first {
+.component-footer_background_color__h2_after_first {
     font-size: 18px;
 }
 
@@ -112,10 +112,6 @@ to hide other div content before scrolling */
     width: 90%;
 }
 
-#component-description_div__h2 {
-    font-size: 25px;
-}
-
 .component-header__right-div {
     width: 10%;
 }
@@ -168,10 +164,6 @@ display: inline-block to create the margin-botton I needed to seperate content *
 .component-footer_background_color__nav,
 .component-footer_background_color__p {
     line-height: 25px;
-}
-
-.component-footer_background_color__a {
-    font-size: 17px;
 }
 
 .component-drop_down_menu_open_animation,
@@ -232,5 +224,54 @@ display: inline-block to create the margin-botton I needed to seperate content *
     }
     to {
         opacity: 1;
+    }
+}
+
+#wider_screen_size_header_navigation_nav {
+    float: right;
+    line-height: 32px;
+}
+
+a:last-child {
+    margin-right: 0px !important;
+}
+
+#wider_screen_size_header_navigation_nav a {
+    margin-right: 25px;
+}
+
+#wider_screen_size_header_navigation {
+    display: none;
+}
+
+#drop_down_menu_email {
+    display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    #wider_screen_size_header_navigation {
+        display: block;
+    }
+    #open_menu_div {
+        display: none;
+    }
+    .component-header__left-div {
+        width: 50%;
+    }
+    .component-header__right-div {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .component-header__left-div {
+        width: 25%;
+    }
+    .component-header__right-div {
+        width: 75%;
+    }
+    #drop_down_menu_email {
+        display: inline;
+        color: #E6E6E6 !important;
     }
 }
