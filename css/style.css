@@ -223,13 +223,27 @@ display: inline-block to create the margin-botton I needed to seperate content *
     }
 }
 
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #86C543 !important;
+}
+
 #wider_screen_size_header_navigation_nav {
     float: right;
     line-height: 32px;
 }
 
 #wider_screen_size_header_navigation_nav a {
+    transition: color 0.3s;
     margin-right: 25px;
+}
+
+#wider_screen_size_header_navigation_nav a:hover {
+    color: #86C543 !important; 
+    border-bottom-color: white !important;
 }
 
 #wider_screen_size_header_navigation {
@@ -295,6 +309,9 @@ display: inline-block to create the margin-botton I needed to seperate content *
     }
     .component-footer_background_color__first_div {
         width: 60%;
+    }
+    .component-footer_background_color__nav {
+        line-height: 30px;
     }
 }
 

@@ -61,11 +61,11 @@ $(document).ready(function() {
     $("#green_email_two").css({
         "border-bottom-color":"#34302D"
     });
-    
+
     $("#wider_screen_drop_down_menu_email").css({
         "color":"#E6E6E6"
     });
-    
+
     /* This function changes styling of links when they are clicked */
     $("a").click(function() {
         if($(this).hasClass("component-footer_background_color__a")) {
@@ -80,21 +80,33 @@ $(document).ready(function() {
             });
         }
     });
-    
+
     $("#wider_screen_drop_down_menu_email").click(function() {
         $("#wider_screen_drop_down_menu_email").css({
             "border-bottom-color":"white"
         });
     });
-    
-    
+
+    $("a").hover(
+        function() {
+            $(this).css({
+                "border-bottom-color":"#34302D"
+            });
+        }, function() {
+            $(this).css({
+                "border-bottom-color":"white"
+            });
+        }
+    );
+
+
     /* This function changes styling of drop down menu email when clicked */
     $("#drop_down_menu_email").click(function() {
         $("#drop_down_menu_email").css({
             "border-bottom-color":"white"
         });
     });
-    
+
     //This function is to display the drop-down menu when the menu button is clicked
     $("#open_menu").click(function() {
         $("#menu").css({
@@ -113,7 +125,7 @@ $(document).ready(function() {
         }
         $("#component-main_content").addClass("component-drop_down_menu_open_animation");
     });
-    
+
     //This function is to close the drop-down menu when the exit button is clicked
     $("#close_menu").click(function() {
         $("#menu").css({
