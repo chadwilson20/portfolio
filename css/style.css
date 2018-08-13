@@ -243,7 +243,6 @@ a:hover {
 
 #wider_screen_size_header_navigation_nav a:hover {
     color: #86C543 !important; 
-    border-bottom-color: white !important;
 }
 
 #wider_screen_size_header_navigation {
@@ -312,6 +311,9 @@ a:hover {
     }
     .component-footer_background_color__nav {
         line-height: 30px;
+    }
+    .contact_header {
+        margin-bottom: 40px;
     }
 }
 

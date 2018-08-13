@@ -87,18 +87,6 @@ $(document).ready(function() {
         });
     });
 
-    $("a").hover(
-        function() {
-            $(this).css({
-                "border-bottom-color":"#34302D"
-            });
-        }, function() {
-            $(this).css({
-                "border-bottom-color":"white"
-            });
-        }
-    );
-
 
     /* This function changes styling of drop down menu email when clicked */
     $("#drop_down_menu_email").click(function() {
