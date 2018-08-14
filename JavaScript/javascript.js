@@ -87,7 +87,7 @@ $(document).ready(function() {
         }
     });
     
-    $("#wider_screen_size_header_navigation_nav a").click(function() {
+    $(".wider_screen_size_header_navigation_nav a").click(function() {
         $(this).css({
             "border-bottom-color":"white"
         });

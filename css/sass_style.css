@@ -74,13 +74,13 @@ p, #component-description_div__h2 {
     .component-footer_background_color__a, #green_email_two {
       font-size: 18px; } }
 
-#wider_screen_size_header_navigation_nav a {
+.wider_screen_size_header_navigation_nav a {
   property: 15px; }
   @media (min-width: 373px) {
-    #wider_screen_size_header_navigation_nav a {
+    .wider_screen_size_header_navigation_nav a {
       font-size: calc(15px + 5 * (100vw - 373px) / 827); } }
   @media (min-width: 1200px) {
-    #wider_screen_size_header_navigation_nav a {
+    .wider_screen_size_header_navigation_nav a {
       font-size: 20px; } }
 
 h1 {

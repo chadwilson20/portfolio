@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 20px;
     font-weight: normal;
 }
- 
+
 h1,h2,h3,h4,h5,h6,p {
     color: #34302D;
 }
@@ -250,8 +250,8 @@ display: inline-block to create the margin-botton I needed to seperate content *
         border-bottom-color: #86C543;
     }
     to {
-        color: #6b9e35;
-        border-bottom-color: #6b9e35;
+        color: #6B9E35;
+        border-bottom-color: #6B9E35;
     }
 }
 
@@ -272,21 +272,21 @@ a:hover {
     border-bottom-color: #86C543 !important;
 }
 
-#wider_screen_size_header_navigation_nav {
+.wider_screen_size_header_navigation_nav {
     float: right;
     line-height: 32px;
 }
 
-#wider_screen_size_header_navigation_nav a {
+.wider_screen_size_header_navigation_nav a {
     transition: color 0.3s;
     margin-right: 25px;
 }
 
-#wider_screen_size_header_navigation_nav a:hover {
+.wider_screen_size_header_navigation_nav a:hover {
     color: #86C543 !important; 
 }
 
-#wider_screen_size_header_navigation {
+.wider_screen_size_header_navigation {
     display: none;
 }
 
@@ -303,10 +303,10 @@ a:hover {
 }
 
 @media only screen and (min-width: 480px) {
-    #wider_screen_size_header_navigation {
+    .wider_screen_size_header_navigation {
         display: block;
     }
-    #open_menu_div {
+    .open_menu_div {
         display: none;
     }
     .component-header__left-div {
@@ -315,7 +315,7 @@ a:hover {
     .component-header__right-div {
         width: 50%;
     }
-    #projects_link {
+    .projects_link {
         margin-right: 0px !important;
     }
 }
@@ -327,7 +327,7 @@ a:hover {
     .component-header__right-div {
         width: 75%;
     }    
-    #projects_link {
+    .projects_link {
         margin-right: 25px !important;
     }
     #wider_screen_drop_down_menu_email {
