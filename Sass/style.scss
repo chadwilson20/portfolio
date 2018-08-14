@@ -9,8 +9,26 @@
             #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
         }
     }
-    
+
     @media (min-width: $max-vw) {
+        @each $property in $properties {
+            #{$property}: $max-value;
+        }
+    }
+}
+
+@mixin responsive-text-height($properties, $min-vh, $max-vh, $min-value, $max-value) {
+    @each $property in $properties {
+        #{property}: $min-value;
+    }
+
+    @media (min-height: $min-vh) {
+        @each $property in $properties {
+            #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vh - #{$min-vh}) / #{strip-unit($max-vh - $min-vh)});
+        }
+    }
+
+    @media (min-height: $max-vh) {
         @each $property in $properties {
             #{$property}: $max-value;
         }
@@ -21,8 +39,26 @@
     @if type-of($number) == "number" and not unitless($number) {
         @return $number / ($number * 0 + 1);
     }
-    
+
     @return $number;
+}
+
+@media only screen and (max-width: 1000px) {
+    #header_margin {
+        @include responsive-text-height(margin-bottom, 367px, 477px, 0px, 120px);
+    }
+    #intro_div {
+        @include responsive-text-height(margin-top, 367px, 477px, 0%, 5%);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #header_margin {
+        @include responsive-text-height(margin-bottom, 478px, 625px, 0px, 120px);
+    }
+    #intro_div {
+        @include responsive-text-height(margin-top, 478px, 625px, 0%, 5%);
+    }
 }
 
 #component-description_div__h2 {
@@ -34,7 +70,7 @@ p {
 }
 
 p, #component-description_div__h2 {
-    @include responsive-text(line-height, 373px, 1200px, 30px, 50px);
+    @include responsive-text(line-height, 373px, 1200px, 30px, 55px);
 }
 
 .component-footer_background_color__a, #green_email_two {

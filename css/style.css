@@ -357,6 +357,12 @@ a:hover {
     }
 }
 
+@media only screen and (min-height: 537px) {
+    #intro_div {
+        margin-bottom: 240px;
+    }
+}
+
 @media only screen and (min-width: 1000px) {
     #wider_screen_footer_div {
         display: none;
