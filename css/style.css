@@ -187,6 +187,18 @@ display: inline-block to create the margin-botton I needed to seperate content *
     animation-name: drop_down_menu_hide;
 }
 
+.from_black_to_green_border_animation {
+    animation-name: from_black_to_green_border;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.green_email_one_border_animation {
+    animation-name: green_email_one_border;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
 @keyframes drop_down_menu_show {
     from {
         opacity: 0;
@@ -223,12 +235,41 @@ display: inline-block to create the margin-botton I needed to seperate content *
     }
 }
 
+@keyframes from_black_to_green_border {
+    from {
+        border-bottom-color: #34302D;
+    }
+    to {
+        border-bottom-color: #86C543;
+    }
+}
+
+@keyframes green_email_one_border {
+    from {
+        color: #86C543;
+        border-bottom-color: #86C543;
+    }
+    to {
+        color: #6b9e35;
+        border-bottom-color: #6b9e35;
+    }
+}
+
 a {
     transition: color 0.3s;
 }
 
 a:hover {
     color: #86C543 !important;
+}
+
+.component-footer_background_color__a:hover {
+    color: #E6E6E6 !important;
+    border-bottom-color: #E6E6E6 !important;
+}
+
+#green_email_two:hover {
+    border-bottom-color: #86C543 !important;
 }
 
 #wider_screen_size_header_navigation_nav {
@@ -290,7 +331,6 @@ a:hover {
         margin-right: 25px !important;
     }
     #wider_screen_drop_down_menu_email {
-        color: #E6E6E6 !important;
         display: inline;
         margin-right: 0px !important;
     }
