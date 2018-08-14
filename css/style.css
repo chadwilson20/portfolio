@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 20px;
     font-weight: normal;
 }
- 
+
 h1,h2,h3,h4,h5,h6,p {
     color: #34302D;
 }
@@ -16,17 +16,17 @@ h1 {
     font-size: 30px;
 }
 
-h2,a {
+h2 {
     font-size: 20px;
 }
 
-p,.component-footer_background_color__h2_after_first {
+.component-footer_background_color__h2_after_first {
     font-size: 18px;
 }
 
 /* #component-description_div__h2 has this to create more spacing
 in the intro */
-p,#component-description_div__h2 {
+p, #component-description_div__h2 {
     line-height: 30px;
 }
 
@@ -66,7 +66,8 @@ nav {
 
 /* display:flex so elements inside div line up side-by-side */
 .component-drop_down_menu--variant-modifier,
-.component-div_margin__header_div {
+.component-div_margin__header_div,
+#wider_screen_footer_div_flex {
     display: flex;
 }
 
@@ -89,13 +90,7 @@ nav {
 /* To create spacing between borders of webpage and spacing inbetween 
 seperate divs on the page */
 .component-div_margin {
-    margin: 5% 5% 110px 5%;
-}
-
-/* Intro div on projects page needed more of a bottom margin
-to hide other div content before scrolling */
-#component-div_margin_projects_page {
-    margin-bottom: 120px;
+    margin: 5% 5% 120px 5%;
 }
 
 .component-div_margin_h2_after_description,
@@ -110,10 +105,6 @@ to hide other div content before scrolling */
 
 .component-header__left-div {
     width: 90%;
-}
-
-#component-description_div__h2 {
-    font-size: 25px;
 }
 
 .component-header__right-div {
@@ -145,6 +136,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
 /* first div in footer needed more margin then the rest */
 .component-footer_background_color__first_div {
     margin-bottom: 60px;
+    width: 70%;
 }
 
 .component-footer_background_color__h2 {
@@ -170,10 +162,6 @@ display: inline-block to create the margin-botton I needed to seperate content *
     line-height: 25px;
 }
 
-.component-footer_background_color__a {
-    font-size: 17px;
-}
-
 .component-drop_down_menu_open_animation,
 .component-drop_down_menu_close_animation,
 .component-drop_down_menu_show_animation,
@@ -197,6 +185,18 @@ display: inline-block to create the margin-botton I needed to seperate content *
 
 .component-drop_down_menu_hide_animation {
     animation-name: drop_down_menu_hide;
+}
+
+.from_black_to_green_border_animation {
+    animation-name: from_black_to_green_border;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.green_email_one_border_animation {
+    animation-name: green_email_one_border;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes drop_down_menu_show {
@@ -232,5 +232,157 @@ display: inline-block to create the margin-botton I needed to seperate content *
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes from_black_to_green_border {
+    from {
+        border-bottom-color: #34302D;
+    }
+    to {
+        border-bottom-color: #86C543;
+    }
+}
+
+@keyframes green_email_one_border {
+    from {
+        color: #86C543;
+        border-bottom-color: #86C543;
+    }
+    to {
+        color: #6B9E35;
+        border-bottom-color: #6B9E35;
+    }
+}
+
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #86C543 !important;
+}
+
+.component-footer_background_color__a:hover {
+    color: #E6E6E6 !important;
+    border-bottom-color: #E6E6E6 !important;
+}
+
+#green_email_two:hover {
+    border-bottom-color: #86C543 !important;
+}
+
+.wider_screen_size_header_navigation_nav {
+    float: right;
+    line-height: 32px;
+}
+
+.wider_screen_size_header_navigation_nav a {
+    transition: color 0.3s;
+    margin-right: 25px;
+}
+
+.wider_screen_size_header_navigation_nav a:hover {
+    color: #86C543 !important; 
+}
+
+.wider_screen_size_header_navigation {
+    display: none;
+}
+
+#wider_screen_drop_down_menu_email {
+    display: none;
+}
+
+#wider_screen_footer_div {
+    display: none;
+}
+
+#widest_screen_footer_div {
+    display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    .wider_screen_size_header_navigation {
+        display: block;
+    }
+    .open_menu_div {
+        display: none;
+    }
+    .component-header__left-div {
+        width: 50%;
+    }
+    .component-header__right-div {
+        width: 50%;
+    }
+    .projects_link {
+        margin-right: 0px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .component-header__left-div {
+        width: 25%;
+    }
+    .component-header__right-div {
+        width: 75%;
+    }    
+    .projects_link {
+        margin-right: 25px !important;
+    }
+    #wider_screen_drop_down_menu_email {
+        display: inline;
+        margin-right: 0px !important;
+    }
+    #mobile_footer_div {
+        display: none;
+    }
+    .component-footer_background_color__div {
+        width: 50%;
+    }
+    #wider_screen_footer_div {
+        display: block;
+    }
+    .component-footer_background_color__h2_after_first {
+        margin-bottom: 35px;
+    }
+    .component-footer_background_color__first_div {
+        width: 60%;
+    }
+    .component-footer_background_color__nav {
+        line-height: 30px;
+    }
+    .contact_header {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (min-height: 537px) {
+    #intro_div {
+        margin-bottom: 240px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #wider_screen_footer_div {
+        display: none;
+    }
+    #widest_screen_footer_div {
+        display: flex;
+    }
+    #wider_screen_footer_div_flex {
+        width: 60%;
+    }
+    .component-footer_background_color__div {
+        width: 25%;
+    }
+    #social_div_width {
+        width: 40%;
+    }
+    .component-footer_background_color__first_div {
+        width: 30%;
+    }
+    .component-div_width {
+        width: 60%;
     }
 }
