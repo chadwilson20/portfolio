@@ -1,41 +1,41 @@
 @media only screen and (max-width: 1000px) {
-  #header_margin {
+  .header_margin {
     property: 0px; } }
   @media only screen and (max-width: 1000px) and (min-height: 367px) {
-    #header_margin {
+    .header_margin {
       margin-bottom: calc(0px + 120 * (100vh - 367px) / 110); } }
   @media only screen and (max-width: 1000px) and (min-height: 477px) {
-    #header_margin {
+    .header_margin {
       margin-bottom: 120px; } }
 
 @media only screen and (max-width: 1000px) {
-  #intro_div {
+  .intro_div {
     property: 0%; } }
   @media only screen and (max-width: 1000px) and (min-height: 367px) {
-    #intro_div {
+    .intro_div {
       margin-top: calc(0% + 5 * (100vh - 367px) / 110); } }
   @media only screen and (max-width: 1000px) and (min-height: 477px) {
-    #intro_div {
+    .intro_div {
       margin-top: 5%; } }
 
 @media only screen and (min-width: 1000px) {
-  #header_margin {
+  .header_margin {
     property: 0px; } }
   @media only screen and (min-width: 1000px) and (min-height: 478px) {
-    #header_margin {
+    .header_margin {
       margin-bottom: calc(0px + 120 * (100vh - 478px) / 147); } }
   @media only screen and (min-width: 1000px) and (min-height: 625px) {
-    #header_margin {
+    .header_margin {
       margin-bottom: 120px; } }
 
 @media only screen and (min-width: 1000px) {
-  #intro_div {
+  .intro_div {
     property: 0%; } }
   @media only screen and (min-width: 1000px) and (min-height: 478px) {
-    #intro_div {
+    .intro_div {
       margin-top: calc(0% + 5 * (100vh - 478px) / 147); } }
   @media only screen and (min-width: 1000px) and (min-height: 625px) {
-    #intro_div {
+    .intro_div {
       margin-top: 5%; } }
 
 #component-description_div__h2 {

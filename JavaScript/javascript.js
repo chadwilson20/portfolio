@@ -128,40 +128,40 @@ $(document).ready(function() {
     });
 
     //This function is to display the drop-down menu when the menu button is clicked
-    $("#open_menu").click(function() {
-        $("#menu").css({
+    $(".open_menu").click(function() {
+        $(".menu").css({
             "pointer-events":"auto",
             "display":"flex"
         });
-        if($("#menu").hasClass("component-drop_down_menu_hide_animation"))
+        if($(".menu").hasClass("component-drop_down_menu_hide_animation"))
         {
-            $("#menu").removeClass("component-drop_down_menu_hide_animation");
+            $(".menu").removeClass("component-drop_down_menu_hide_animation");
         }
-        $("#menu").addClass("component-drop_down_menu_show_animation");
-        $("#component-main_content").css({"pointer-events":"none"});
-        if($("#component-main_content").hasClass("component-drop_down_menu_close_animation"))
+        $(".menu").addClass("component-drop_down_menu_show_animation");
+        $(".component-main_content").css({"pointer-events":"none"});
+        if($(".component-main_content").hasClass("component-drop_down_menu_close_animation"))
         {
-            $("#component-main_content").removeClass("component-drop_down_menu_close_animation");
+            $(".component-main_content").removeClass("component-drop_down_menu_close_animation");
         }
-        $("#component-main_content").addClass("component-drop_down_menu_open_animation");
+        $(".component-main_content").addClass("component-drop_down_menu_open_animation");
     });
 
     //This function is to close the drop-down menu when the exit button is clicked
-    $("#close_menu").click(function() {
-        $("#menu").css({
+    $(".close_menu").click(function() {
+        $(".menu").css({
             "pointer-events":"none",
             "display":"none"
         });
-        if($("#menu").hasClass("component-drop_down_menu_show_animation"))
+        if($(".menu").hasClass("component-drop_down_menu_show_animation"))
         {
-            $("#menu").removeClass("component-drop_down_menu_show_animation");
+            $(".menu").removeClass("component-drop_down_menu_show_animation");
         }
-        $("#menu").addClass("component-drop_down_menu_hide_animation");
-        if($("#component-main_content").hasClass("component-drop_down_menu_open_animation"))
+        $(".menu").addClass("component-drop_down_menu_hide_animation");
+        if($(".component-main_content").hasClass("component-drop_down_menu_open_animation"))
         {
-            $("component-main_content").removeClass("component-drop_down_menu_open_animation");
+            $(".component-main_content").removeClass("component-drop_down_menu_open_animation");
         }
-        $("#component-main_content").addClass("component-drop_down_menu_close_animation");
-        $("#component-main_content").css({"pointer-events":"auto"});
+        $(".component-main_content").addClass("component-drop_down_menu_close_animation");
+        $(".component-main_content").css({"pointer-events":"auto"});
     });
 });

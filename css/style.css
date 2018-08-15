@@ -68,7 +68,7 @@ nav {
 
 /* To create overlay effect with drop-down menu */
 .component-drop_down_menu--variant-modifier,
-#component-main_content {
+.component-main_content {
     top: 0;
     left: 0;
 }
@@ -86,12 +86,12 @@ nav {
 /* display:flex so elements inside div line up side-by-side */
 .component-drop_down_menu--variant-modifier,
 .component-div_margin__header_div,
-#wider_screen_footer_div_flex {
+.wider_screen_footer_div_flex {
     display: flex;
 }
 
 /* To create overlay effect with drop-down menu */
-#component-main_content {
+.component-main_content {
     position: absolute;
 }
 
@@ -317,11 +317,11 @@ a:hover {
     display: none;
 }
 
-#wider_screen_footer_div {
+.wider_screen_footer_div {
     display: none;
 }
 
-#widest_screen_footer_div {
+.widest_screen_footer_div {
     display: none;
 }
 
@@ -357,13 +357,13 @@ a:hover {
         display: inline;
         margin-right: 0px !important;
     }
-    #mobile_footer_div {
+    .mobile_footer_div {
         display: none;
     }
     .component-footer_background_color__div {
         width: 50%;
     }
-    #wider_screen_footer_div {
+    .wider_screen_footer_div {
         display: block;
     }
     .component-footer_background_color__h2_after_first {
@@ -381,25 +381,25 @@ a:hover {
 }
 
 @media only screen and (min-height: 537px) {
-    #intro_div {
+    .intro_div {
         margin-bottom: 240px;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    #wider_screen_footer_div {
+    .wider_screen_footer_div {
         display: none;
     }
-    #widest_screen_footer_div {
+    .widest_screen_footer_div {
         display: flex;
     }
-    #wider_screen_footer_div_flex {
+    .wider_screen_footer_div_flex {
         width: 60%;
     }
     .component-footer_background_color__div {
         width: 25%;
     }
-    #social_div_width {
+    .social_div_width {
         width: 40%;
     }
     .component-footer_background_color__first_div {
