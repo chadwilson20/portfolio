@@ -20,6 +20,25 @@ h2 {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: #34302D;
+    border-bottom: 1px solid white;
+}
+
+.component-footer_background_color__a {
+    color: #E6E6E6;
+    border-bottom: 1px solid #34302D;
+}
+
+#green_email_two {
+    border-bottom-color: #34302D;
+}
+
+#wider_screen_drop_down_menu_email {
+    color: #E6E6E6;
+}
+
 .component-footer_background_color__h2_after_first {
     font-size: 18px;
 }
@@ -266,6 +285,10 @@ a:hover {
 .component-footer_background_color__a:hover {
     color: #E6E6E6 !important;
     border-bottom-color: #E6E6E6 !important;
+}
+
+.component-footer_background_color__p:hover {
+    border-bottom-color: #34302D !important;
 }
 
 #green_email_two:hover {
