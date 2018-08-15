@@ -86,48 +86,34 @@ $(document).ready(function() {
                 "color":"#86C543",
                 "border-bottom-color":"#86C543"
             });
+            if($(this).parent().hasClass("wider_screen_size_header_navigation_nav") || $(this).parent().hasClass("component-header__left-div__nav")) {
+                $(this).css({
+                    "border-bottom-color":"white"
+                });
+            }
+            else {
+                $(this).css({
+                    "border-bottom-color":"#86C543"
+                });
+            }
         }
     });
-    
-    $(".wider_screen_size_header_navigation_nav a").click(function() {
-        $(this).css({
-            "border-bottom-color":"white"
-        });
-    });
-    
-    $(".component-header__left-div__nav a").click(function() {
-        $(this).css({
-            "border-bottom-color":"white"
-        });
-    });
-    
+
+    //Gives animation to some of the links on hover
     $(".from_black_to_green_border").hover(function() {
         $(this).addClass("from_black_to_green_border_animation");
     }, function() {
         $(this).removeClass("from_black_to_green_border_animation");
     });
-    
+
+    //Gives animation to the last email link before hitting the footer on hover
     $("#green_email_one").hover(function() {
         $("#green_email_one").addClass("green_email_one_border_animation");
     }, function() {
         $("#green_email_one").removeClass("green_email_one_border_animation");
     });
 
-    $("#wider_screen_drop_down_menu_email").click(function() {
-        $("#wider_screen_drop_down_menu_email").css({
-            "border-bottom-color":"white"
-        });
-    });
-
-
-    /* This function changes styling of drop down menu email when clicked */
-    $("#drop_down_menu_email").click(function() {
-        $("#drop_down_menu_email").css({
-            "border-bottom-color":"white"
-        });
-    });
-
-    //This function is to display the drop-down menu when the menu button is clicked
+    //This function is to display the drop-down menu when the menu button is clicked on mobile view
     $(".open_menu").click(function() {
         $(".menu").css({
             "pointer-events":"auto",
@@ -146,7 +132,7 @@ $(document).ready(function() {
         $(".component-main_content").addClass("component-drop_down_menu_open_animation");
     });
 
-    //This function is to close the drop-down menu when the exit button is clicked
+    //This function is to close the drop-down menu when the exit button is clicked on mobile view
     $(".close_menu").click(function() {
         $(".menu").css({
             "pointer-events":"none",
