@@ -7,6 +7,8 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: normal;
 }
 
+/* .component-footer_background_color__email_border_color:
+this is to add a margin to the bottom of the green email in the footer */
 h1,h2,h3,h4,h5,h6,p,
 .component-footer_background_color__email_border_color {
     margin-bottom: 20px;
@@ -59,6 +61,7 @@ nav a:after {
     width: 1px;
 }
 
+/* To add seperation between links inside of navs when they are on seperate lines */
 nav {
     line-height: 50px;
 }
@@ -98,7 +101,6 @@ nav {
 
 .component-header__left-div__nav > a {
     font-size: 23px;
-    border-bottom: none;
 }
 
 /* !important to remove previous color styling */
@@ -146,6 +148,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
     display: inline-block;
 }
 
+/* To add spacing between different sections in the footer */
 .component-footer_background_color__div {
     margin-bottom: 50px;
 }
@@ -165,6 +168,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
     margin-bottom: 15px;
 }
 
+/* To remove default margin-bottom styling on normal paragraphs */
 .component-footer_background_color__p {
     margin-bottom: 0;
 }
@@ -174,18 +178,14 @@ display: inline-block to create the margin-botton I needed to seperate content *
     margin-bottom: 7px;
 }
 
+/* Not as much line-height needed compared to other navs on this page */
+/* line-height on .component-footer_background_color__p to add spacing rather than margin-bottom */
 .component-footer_background_color__nav,
 .component-footer_background_color__p {
     line-height: 25px;
 }
 
-.component-drop_down_menu_open_animation,
-.component-drop_down_menu_close_animation,
-.component-drop_down_menu_show_animation,
-.component-drop_down_menu_hide_animation, {
-    animation-duration: .5s; 
-}
-
+/* So these animations do not repeat */
 .component-drop_down_menu_open_animation,
 .component-drop_down_menu_close_animation,
 .component-drop_down_menu_show_animation,
@@ -193,6 +193,13 @@ display: inline-block to create the margin-botton I needed to seperate content *
 .from_black_to_green_border_animation,
 .green_email_one_border_animation {
     animation-fill-mode: forwards;
+}
+
+.component-drop_down_menu_open_animation,
+.component-drop_down_menu_close_animation,
+.component-drop_down_menu_show_animation,
+.component-drop_down_menu_hide_animation {
+     animation-duration: .5s;
 }
 
 .component-drop_down_menu_open_animation {
@@ -285,35 +292,46 @@ a,
 .wider_screen_size_header_navigation_nav a {
     transition: color 0.3s;
 }
-
+ 
+/* !important to remove default styling from regular a:hover */
 .component-footer_background_color__a:hover {
     color: #E6E6E6 !important;
     border-bottom-color: #E6E6E6 !important;
 }
 
+/* Added this because it shares same class as .component-footer_background_color__a */
 .component-footer_background_color__p:hover {
-    border-bottom-color: #34302D !important;
+    border-bottom-color: #34302D;
 }
 
+/* !important to remove default styling from regular a:hover */
 #green_email_two:hover {
     border-bottom-color: #86C543 !important;
 }
 
+/* float:right to keep it to right of screen and line-height to put elements in nav in the center of nav */
 .wider_screen_size_header_navigation_nav {
     float: right;
     line-height: 32px;
 }
 
+/* add spacing between links in this nav */
 .wider_screen_size_header_navigation_nav a {
     margin-right: 25px;
 }
 
+/* Not to be seen until at specific screen sizes */
 .wider_screen_size_header_navigation,
 #wider_screen_drop_down_menu_email,
 .wider_screen_footer_div,
 .widest_screen_footer_div {
     display: none;
 }
+
+
+/* lines 335 - 418 */
+/* MEDIA QUERIES */
+
 
 @media only screen and (min-width: 480px) {
     .wider_screen_size_header_navigation {
