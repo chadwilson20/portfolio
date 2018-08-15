@@ -4,11 +4,15 @@ body {
 
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
-    margin-bottom: 20px;
     font-weight: normal;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h4,h5,h6,p,
+.component-footer_background_color__email_border_color {
+    margin-bottom: 20px;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
     color: #34302D;
 }
 
@@ -22,21 +26,19 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #34302D;
     border-bottom: 1px solid white;
 }
 
+.component-footer_background_color__a,
+#wider_screen_drop_down_menu_email,
+.component-div_margin_h2_after_description,
 .component-footer_background_color__a {
     color: #E6E6E6;
-    border-bottom: 1px solid #34302D;
 }
 
-#green_email_two {
+#green_email_two,
+.component-footer_background_color__a {
     border-bottom-color: #34302D;
-}
-
-#wider_screen_drop_down_menu_email {
-    color: #E6E6E6;
 }
 
 .component-footer_background_color__h2_after_first {
@@ -78,7 +80,6 @@ nav {
     opacity: 0;
     margin: 4% 5% 5% 5%;
     z-index: 10;
-    width: 90%;
     position: fixed;
     pointer-events: none;
 }
@@ -102,7 +103,9 @@ nav {
 
 /* !important to remove previous color styling */
 .component-header__left-div__nav_active_a,
-.component-div_margin__email_color {
+.component-div_margin__email_color,
+a:hover,
+.wider_screen_size_header_navigation_nav a:hover {
     color: #86C543 !important;
 }
 
@@ -112,17 +115,13 @@ seperate divs on the page */
     margin: 5% 5% 120px 5%;
 }
 
-.component-div_margin_h2_after_description,
-.component-footer_background_color__a {
-    color: #E6E6E6;
-}
-
 .component-header_green_bar {
     height: 2px;
     background-color: #86C543;
 }
 
-.component-header__left-div {
+.component-header__left-div,
+.component-drop_down_menu--variant-modifier {
     width: 90%;
 }
 
@@ -145,7 +144,6 @@ seperate divs on the page */
 display: inline-block to create the margin-botton I needed to seperate content */
 .component-footer_background_color__email_border_color {
     display: inline-block;
-    margin-bottom: 20px;
 }
 
 .component-footer_background_color__div {
@@ -184,9 +182,17 @@ display: inline-block to create the margin-botton I needed to seperate content *
 .component-drop_down_menu_open_animation,
 .component-drop_down_menu_close_animation,
 .component-drop_down_menu_show_animation,
-.component-drop_down_menu_hide_animation {
-    animation-fill-mode: forwards;
+.component-drop_down_menu_hide_animation, {
     animation-duration: .5s; 
+}
+
+.component-drop_down_menu_open_animation,
+.component-drop_down_menu_close_animation,
+.component-drop_down_menu_show_animation,
+.component-drop_down_menu_hide_animation,
+.from_black_to_green_border_animation,
+.green_email_one_border_animation {
+    animation-fill-mode: forwards;
 }
 
 .component-drop_down_menu_open_animation {
@@ -206,16 +212,17 @@ display: inline-block to create the margin-botton I needed to seperate content *
     animation-name: drop_down_menu_hide;
 }
 
+.from_black_to_green_border_animation,
+.green_email_one_border_animation {
+    animation-duration: .3s;
+}
+
 .from_black_to_green_border_animation {
     animation-name: from_black_to_green_border;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
 }
 
 .green_email_one_border_animation {
     animation-name: green_email_one_border;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes drop_down_menu_show {
@@ -274,12 +281,9 @@ display: inline-block to create the margin-botton I needed to seperate content *
     }
 }
 
-a {
+a,
+.wider_screen_size_header_navigation_nav a {
     transition: color 0.3s;
-}
-
-a:hover {
-    color: #86C543 !important;
 }
 
 .component-footer_background_color__a:hover {
@@ -301,26 +305,12 @@ a:hover {
 }
 
 .wider_screen_size_header_navigation_nav a {
-    transition: color 0.3s;
     margin-right: 25px;
 }
 
-.wider_screen_size_header_navigation_nav a:hover {
-    color: #86C543 !important; 
-}
-
-.wider_screen_size_header_navigation {
-    display: none;
-}
-
-#wider_screen_drop_down_menu_email {
-    display: none;
-}
-
-.wider_screen_footer_div {
-    display: none;
-}
-
+.wider_screen_size_header_navigation,
+#wider_screen_drop_down_menu_email,
+.wider_screen_footer_div,
 .widest_screen_footer_div {
     display: none;
 }
