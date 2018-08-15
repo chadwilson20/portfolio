@@ -111,8 +111,7 @@ nav {
 /* !important to remove previous color styling */
 .component-header__left-div__nav_active_a,
 .component-div_margin__email_color,
-a:hover,
-.wider_screen_size_header_navigation_nav a:hover {
+a:hover {
     color: #86C543 !important;
 }
 
@@ -293,8 +292,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
     }
 }
 
-a,
-.wider_screen_size_header_navigation_nav a {
+a {
     transition: color 0.3s;
 }
  
