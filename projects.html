@@ -1,3 +1,5 @@
+<!-- Design inspiration courtesy of Timmy O'Mahony from his portfolio website. Here is the link to it:
+http://www.colourlovers.com/web/trends/websites/7853/KICKSTARTER -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,11 +23,11 @@
         <title>Projects</title>
     </head>
     <body>
-        <!-- Div container to create drop-down menu overlay functionality -->
+        <!-- Div container to create drop-down menu overlay functionality for mobile view -->
         <div class="component-surrounding_div">
             <!-- Drop-down menu -->
-            <div class="component-drop_down_menu--variant-modifier" id="menu">
-                <!-- Navigation -->
+            <div class="component-drop_down_menu--variant-modifier menu">
+                <!-- Mobile view navigation -->
                 <div class="component-header__left-div">
                     <nav class="component-header__left-div__nav">
                         <a href="index.html">About</a>
@@ -35,22 +37,23 @@
                 </div>
                 <!-- Exit button -->
                 <div class="component-header__right-div">
-                    <i class="fas fa-times fa-3x" id="close_menu"></i>
+                    <i class="fas fa-times fa-3x close_menu"></i>
                 </div>
             </div>
             <!-- Main Content -->
-            <div id="component-main_content">
+            <div class="component-main_content">
                 <!-- Green Bar -->
                 <div class="component-header_green_bar"></div>
-                <header class="component-div_margin" id="header_margin">
+                <header class="component-div_margin header_margin">
                     <div class="component-div_margin__header_div">
                         <div class="component-header__left-div">
                             <h1>Chad Wilson</h1>
                         </div>
                         <!-- Open menu button -->
                         <div class="component-header__right-div open_menu_div">
-                            <i class="fas fa-bars fa-2x" id="open_menu"></i>
+                            <i class="fas fa-bars fa-2x open_menu"></i>
                         </div>
+                        <!-- Tablet and desktop navigation view -->
                         <div class="component-header__right-div wider_screen_size_header_navigation">
                             <div class="wider_screen_size_header_navigation_nav">
                                 <a href="index.html">About</a>
@@ -60,12 +63,16 @@
                         </div>
                     </div>
                 </header>
-                <!-- Projects section -->
-                <div class="component-div_margin component-div_width" id="intro_div">
-                    <h2 class="component-div_margin_h2_after_description">Projects</h2>
-                    <p>Sorry, nothing to show here at the moment except for this website I built.</p>
-                    <p>However, I am in the process of developing a prayer application with a group of other developers I worked with last summer during an internship that will soon be deployed!</p>
-                </div>
+                <article>
+                    <section>
+                        <!-- Projects section -->
+                        <div class="component-div_margin component-div_width intro_div">
+                            <h2 class="component-div_margin_h2_after_description">Projects</h2>
+                            <p>Sorry, nothing to show here at the moment except for this website I built.</p>
+                            <p>However, I am in the process of developing a prayer application with a group of other developers I worked with last summer during an internship that will soon be deployed!</p>
+                        </div>
+                    </section>
+                </article>
                 <!--Footer-->
                 <footer class="component-footer_background_color">
                     <div class="component-footer_background_color__first_div">
@@ -73,7 +80,8 @@
                         <a href="javascript:;" class="component-div_margin__email_color component-footer_background_color__email_border_color" id="green_email_two" onclick="CopyEmail('green_email_two')">chadwilson959@yahoo.com</a>
                         <p class="component-footer_background_color__a component-footer_background_color__p">I use my front-end web development skills to create beautiful and efficent websites.</p>
                     </div>
-                    <div id="mobile_footer_div">
+                    <!-- Mobile view footer -->
+                    <div class="mobile_footer_div">
                         <div class="component-footer_background_color__div">
                             <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Menu</h2>
                             <nav class="component-footer_background_color__nav">
@@ -93,8 +101,9 @@
                             </nav>
                         </div>
                     </div>
-                    <div id="wider_screen_footer_div">
-                        <div id="wider_screen_footer_div_flex">
+                    <!-- Tablet view footer -->
+                    <div class="wider_screen_footer_div">
+                        <div class="wider_screen_footer_div_flex">
                             <div class="component-footer_background_color__div">
                                 <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Menu</h2>
                                 <nav class="component-footer_background_color__nav">
@@ -115,8 +124,9 @@
                             </nav>
                         </div>
                     </div>
-                    <div id="widest_screen_footer_div">
-                        <div id="wider_screen_footer_div_flex">
+                    <!-- Desktop view footer -->
+                    <div class="widest_screen_footer_div">
+                        <div class="wider_screen_footer_div_flex">
                             <div class="component-footer_background_color__div">
                                 <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Menu</h2>
                                 <nav class="component-footer_background_color__nav">
@@ -129,7 +139,7 @@
                                 <a href="javascript:;" class="component-footer_background_color__a" id="grey_email_three" onclick="CopyEmail('grey_email_three')">chadwilson959@yahoo.com</a>
                             </div>
                         </div>
-                        <div id="social_div_width">
+                        <div class="social_div_width">
                             <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Social</h2>
                             <nav class="component-footer_background_color__nav">
                                 <a href="https://www.linkedin.com/in/chad-wilson-b35160b6/" target="_blank" class="component-footer_background_color__a">Linkedin</a>

@@ -1,14 +1,25 @@
+/* Color palette courtesy of colorlovers.com. Here is the direct link to the color palette:
+http://www.colourlovers.com/web/trends/websites/7853/KICKSTARTER */
+/* Design inspiration courtesy of Timmy O'Mahony from his portfolio website. Here is the link to it:
+http://www.colourlovers.com/web/trends/websites/7853/KICKSTARTER */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
-    margin-bottom: 20px;
     font-weight: normal;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+/* .component-footer_background_color__email_border_color:
+this is to add a margin to the bottom of the green email in the footer */
+h1,h2,h3,h4,h5,h6,p,
+.component-footer_background_color__email_border_color {
+    margin-bottom: 20px;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
     color: #34302D;
 }
 
@@ -22,21 +33,19 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #34302D;
     border-bottom: 1px solid white;
 }
 
+.component-footer_background_color__a,
+#wider_screen_drop_down_menu_email,
+.component-div_margin_h2_after_description,
 .component-footer_background_color__a {
     color: #E6E6E6;
-    border-bottom: 1px solid #34302D;
 }
 
-#green_email_two {
+#green_email_two,
+.component-footer_background_color__a {
     border-bottom-color: #34302D;
-}
-
-#wider_screen_drop_down_menu_email {
-    color: #E6E6E6;
 }
 
 .component-footer_background_color__h2_after_first {
@@ -57,6 +66,7 @@ nav a:after {
     width: 1px;
 }
 
+/* To add seperation between links inside of navs when they are on seperate lines */
 nav {
     line-height: 50px;
 }
@@ -68,7 +78,7 @@ nav {
 
 /* To create overlay effect with drop-down menu */
 .component-drop_down_menu--variant-modifier,
-#component-main_content {
+.component-main_content {
     top: 0;
     left: 0;
 }
@@ -78,7 +88,6 @@ nav {
     opacity: 0;
     margin: 4% 5% 5% 5%;
     z-index: 10;
-    width: 90%;
     position: fixed;
     pointer-events: none;
 }
@@ -86,23 +95,24 @@ nav {
 /* display:flex so elements inside div line up side-by-side */
 .component-drop_down_menu--variant-modifier,
 .component-div_margin__header_div,
-#wider_screen_footer_div_flex {
+.wider_screen_footer_div_flex {
     display: flex;
 }
 
 /* To create overlay effect with drop-down menu */
-#component-main_content {
+.component-main_content {
     position: absolute;
 }
 
 .component-header__left-div__nav > a {
     font-size: 23px;
-    border-bottom: none;
 }
 
 /* !important to remove previous color styling */
 .component-header__left-div__nav_active_a,
-.component-div_margin__email_color {
+.component-div_margin__email_color,
+a:hover,
+.wider_screen_size_header_navigation_nav a:hover {
     color: #86C543 !important;
 }
 
@@ -112,17 +122,13 @@ seperate divs on the page */
     margin: 5% 5% 120px 5%;
 }
 
-.component-div_margin_h2_after_description,
-.component-footer_background_color__a {
-    color: #E6E6E6;
-}
-
 .component-header_green_bar {
     height: 2px;
     background-color: #86C543;
 }
 
-.component-header__left-div {
+.component-header__left-div,
+.component-drop_down_menu--variant-modifier {
     width: 90%;
 }
 
@@ -145,9 +151,9 @@ seperate divs on the page */
 display: inline-block to create the margin-botton I needed to seperate content */
 .component-footer_background_color__email_border_color {
     display: inline-block;
-    margin-bottom: 20px;
 }
 
+/* To add spacing between different sections in the footer */
 .component-footer_background_color__div {
     margin-bottom: 50px;
 }
@@ -167,6 +173,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
     margin-bottom: 15px;
 }
 
+/* To remove default margin-bottom styling on normal paragraphs */
 .component-footer_background_color__p {
     margin-bottom: 0;
 }
@@ -176,17 +183,28 @@ display: inline-block to create the margin-botton I needed to seperate content *
     margin-bottom: 7px;
 }
 
+/* Not as much line-height needed compared to other navs on this page */
+/* line-height on .component-footer_background_color__p to add spacing rather than margin-bottom */
 .component-footer_background_color__nav,
 .component-footer_background_color__p {
     line-height: 25px;
+}
+
+/* So these animations do not repeat */
+.component-drop_down_menu_open_animation,
+.component-drop_down_menu_close_animation,
+.component-drop_down_menu_show_animation,
+.component-drop_down_menu_hide_animation,
+.from_black_to_green_border_animation,
+.green_email_one_border_animation {
+    animation-fill-mode: forwards;
 }
 
 .component-drop_down_menu_open_animation,
 .component-drop_down_menu_close_animation,
 .component-drop_down_menu_show_animation,
 .component-drop_down_menu_hide_animation {
-    animation-fill-mode: forwards;
-    animation-duration: .5s; 
+     animation-duration: .5s;
 }
 
 .component-drop_down_menu_open_animation {
@@ -206,16 +224,17 @@ display: inline-block to create the margin-botton I needed to seperate content *
     animation-name: drop_down_menu_hide;
 }
 
+.from_black_to_green_border_animation,
+.green_email_one_border_animation {
+    animation-duration: .3s;
+}
+
 .from_black_to_green_border_animation {
     animation-name: from_black_to_green_border;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
 }
 
 .green_email_one_border_animation {
     animation-name: green_email_one_border;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes drop_down_menu_show {
@@ -274,56 +293,50 @@ display: inline-block to create the margin-botton I needed to seperate content *
     }
 }
 
-a {
+a,
+.wider_screen_size_header_navigation_nav a {
     transition: color 0.3s;
 }
-
-a:hover {
-    color: #86C543 !important;
-}
-
+ 
+/* !important to remove default styling from regular a:hover */
 .component-footer_background_color__a:hover {
     color: #E6E6E6 !important;
     border-bottom-color: #E6E6E6 !important;
 }
 
+/* Added this because it shares same class as .component-footer_background_color__a */
 .component-footer_background_color__p:hover {
-    border-bottom-color: #34302D !important;
+    border-bottom-color: #34302D;
 }
 
+/* !important to remove default styling from regular a:hover */
 #green_email_two:hover {
     border-bottom-color: #86C543 !important;
 }
 
+/* float:right to keep it to right of screen and line-height to put elements in nav in the center of nav */
 .wider_screen_size_header_navigation_nav {
     float: right;
     line-height: 32px;
 }
 
+/* add spacing between links in this nav */
 .wider_screen_size_header_navigation_nav a {
-    transition: color 0.3s;
     margin-right: 25px;
 }
 
-.wider_screen_size_header_navigation_nav a:hover {
-    color: #86C543 !important; 
-}
-
-.wider_screen_size_header_navigation {
+/* Not to be seen until at specific screen sizes */
+.wider_screen_size_header_navigation,
+#wider_screen_drop_down_menu_email,
+.wider_screen_footer_div,
+.widest_screen_footer_div {
     display: none;
 }
 
-#wider_screen_drop_down_menu_email {
-    display: none;
-}
 
-#wider_screen_footer_div {
-    display: none;
-}
+/* lines 335 - 418 */
+/* MEDIA QUERIES */
 
-#widest_screen_footer_div {
-    display: none;
-}
 
 @media only screen and (min-width: 480px) {
     .wider_screen_size_header_navigation {
@@ -357,13 +370,13 @@ a:hover {
         display: inline;
         margin-right: 0px !important;
     }
-    #mobile_footer_div {
+    .mobile_footer_div {
         display: none;
     }
     .component-footer_background_color__div {
         width: 50%;
     }
-    #wider_screen_footer_div {
+    .wider_screen_footer_div {
         display: block;
     }
     .component-footer_background_color__h2_after_first {
@@ -381,25 +394,25 @@ a:hover {
 }
 
 @media only screen and (min-height: 537px) {
-    #intro_div {
+    .intro_div {
         margin-bottom: 240px;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    #wider_screen_footer_div {
+    .wider_screen_footer_div {
         display: none;
     }
-    #widest_screen_footer_div {
+    .widest_screen_footer_div {
         display: flex;
     }
-    #wider_screen_footer_div_flex {
+    .wider_screen_footer_div_flex {
         width: 60%;
     }
     .component-footer_background_color__div {
         width: 25%;
     }
-    #social_div_width {
+    .social_div_width {
         width: 40%;
     }
     .component-footer_background_color__first_div {
