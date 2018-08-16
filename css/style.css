@@ -108,11 +108,13 @@ nav {
     font-size: 23px;
 }
 
-/* !important to remove previous color styling */
+/* Needed to put #wider_screen_drop_down_menu_email:hover even though a:hover is selected
+because otherwise it would not work */
 .component-header__left-div__nav_active_a,
 .component-div_margin__email_color,
-a:hover {
-    color: #86C543 !important;
+a:hover,
+#wider_screen_drop_down_menu_email:hover {
+    color: #86C543;
 }
 
 /* To create spacing between borders of webpage and spacing inbetween 
