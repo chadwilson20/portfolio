@@ -119,6 +119,6 @@ $(document).ready(function() {
     });
     
     $(".open_project_info").click(function() {
-        $(".component-specific_projects_info_div_hidden").css({"display":"block"});
+        $(".component-specific_projects_info_div_hidden").slideToggle(400);
     });
 });
