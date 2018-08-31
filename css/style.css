@@ -36,11 +36,29 @@ a {
     border-bottom: 1px solid white;
 }
 
+.component-prayer_app_project_div {
+    width: 90;
+    height: 280px;
+    background-color: #E6E6E6;
+    background-image: url(../Images/favico.ico);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
 .component-footer_background_color__a,
 #wider_screen_drop_down_menu_email,
 .component-div_margin_h2_after_description,
-.component-footer_background_color__a {
+.component-project_descriptions {
     color: #E6E6E6;
+}
+
+.component-project_descriptions {
+    margin-bottom: 0px !important;
+}
+
+.component-project_title {
+    margin-bottom: 5px !important;
 }
 
 #green_email_two,
@@ -103,7 +121,8 @@ TEST FIRST BEFORE DELETING
 /* display:flex so elements inside div line up side-by-side */
 .component-drop_down_menu--variant-modifier,
 .component-div_margin__header_div,
-.wider_screen_footer_div_flex {
+.wider_screen_footer_div_flex,
+.component-specific_projects_info_div {
     display: flex;
 }
 
@@ -131,6 +150,10 @@ a:hover,
 seperate divs on the page */
 .component-div_margin {
     margin: 5% 5% 120px 5%;
+}
+
+.component-div_margin__specific_projects_pages {
+    margin-bottom: 25px !important;
 }
 
 .component-header_green_bar {

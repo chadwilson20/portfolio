@@ -1,0 +1,88 @@
+<!-- Design inspiration courtesy of Timmy O'Mahony from his portfolio website. Here is the link to it:
+http://www.colourlovers.com/web/trends/websites/7853/KICKSTARTER -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- This is so viewing website is scaled well on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- This is where I am getting all my icons from -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+        <!-- Image by fontawesome.com. Here is link to image: https://fontawesome.com/icons/project-diagram?style=solid -->
+        <link rel="icon" href="Images/project-diagram-solid.png">
+        <!-- To remove default browser styling -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+        <!-- My style sheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- My Sass style sheet -->
+        <link rel="stylesheet" href="css/sass_style.css">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- My script -->
+        <script src="JavaScript/javascript.js"></script>
+        <title>Prayer App</title>
+    </head>
+    <body>
+        <!-- Div container to create drop-down menu overlay functionality for mobile view -->
+        <div class="component-surrounding_div">
+            <!-- Drop-down menu -->
+            <div class="component-drop_down_menu--variant-modifier menu">
+                <!-- Mobile view navigation -->
+                <div class="component-header__left-div">
+                    <nav class="component-header__left-div__nav">
+                        <a href="index.html">About</a>
+                        <a href="projects.html" class="component-header__left-div__nav_active_a">Projects</a>
+                        <a href="javascript:;" id="drop_down_menu_email" onclick="CopyEmail('drop_down_menu_email')">chadwilson959@yahoo.com</a>
+                    </nav>
+                </div>
+                <!-- Exit button -->
+                <div class="component-header__right-div">
+                    <i class="fas fa-times fa-3x close_menu"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="component-main_content">
+            <!-- Green Bar -->
+            <div class="component-header_green_bar"></div> 
+            <header class="component-div_margin header_margin component-div_margin__specific_projects_pages">
+                <div class="component-div_margin__header_div">
+                    <div class="component-header__left-div">
+                        <h1>Chad Wilson</h1>
+                    </div>
+                    <!-- Open menu button -->
+                    <div class="component-header__right-div open_menu_div">
+                        <i class="fas fa-bars fa-2x open_menu"></i>
+                    </div>
+                    <!-- Tablet and desktop navigation view -->
+                    <div class="component-header__right-div wider_screen_size_header_navigation">
+                        <div class="wider_screen_size_header_navigation_nav">
+                            <a href="index.html" class="component-header__left-div__nav_active_a">About</a>
+                            <a href="projects.html" class="projects_link">Projects</a>
+                            <a href="javascript:;" id="wider_screen_drop_down_menu_email" onclick="CopyEmail('wider_screen_drop_down_menu_email')">chadwilson959@yahoo.com</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <article>
+                <section>
+                    <div class="component-div_margin component-div_width component-specific_projects_info_div component-div_margin__specific_projects_pages">
+                        <div class="component-header__left-div">
+                            <h2 class="component-project_title">Prayer App</h2>
+                            <p class="component-project_descriptions">Cru</p>
+                        </div>
+                        <div class="component-header__right_div">
+                            <i class="fas fa-angle-down fa-3x"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="component-specific_projects_info_div_hidden">
+                    <div class="component-div_margin component-div_width component-div_margin__specific_projects_pages">
+                        <p class="component-project_descriptions">Year</p>
+                        <p class="component-project_title">2018</p>
+                    </div> 
+                </section>
+            </article>
+        </div>
+    </body>
+</html>
