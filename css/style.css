@@ -17,6 +17,11 @@ h3 {
     color: #E6E6E6;
 }
 
+.component-div_margin__paragraph_description_text_size {
+    font-size: 16px;
+    line-height: 23px;
+}
+
 h3, .component-div_margin__paragraph_text_size {
     font-size: 15px;
 }
@@ -52,6 +57,16 @@ a {
 .component-prayer_app_project_div {
     width: 100%;
     height: 280px;
+    background-color: #E6E6E6;
+    background-image: url(../Images/favico.ico);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.component-prayer_app_project_div_projects_page {
+    width: 100%;
+    height: 400px;
     background-color: #E6E6E6;
     background-image: url(../Images/favico.ico);
     background-repeat: no-repeat;
