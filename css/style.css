@@ -85,6 +85,121 @@ a {
     margin-top: 40px;
 }
 
+.component-prayer_app_project_div_on_specific_page_screenshots {
+    width: 100%;
+    background-color: #E6E6E6;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_two,
+#component-prayer_app_project_div_on_specific_page_screenshot_three,
+#component-prayer_app_project_div_on_specific_page_screenshot_four,
+#component-prayer_app_project_div_on_specific_page_screenshot_five,
+#component-prayer_app_project_div_on_specific_page_screenshot_six,
+#component-prayer_app_project_div_on_specific_page_screenshot_seven,
+#component-prayer_app_project_div_on_specific_page_screenshot_eight,
+#component-prayer_app_project_div_on_specific_page_screenshot_nine,
+#component-prayer_app_project_div_on_specific_page_screenshot_ten,
+#component-prayer_app_project_div_on_specific_page_screenshot_eleven,
+#component-prayer_app_project_div_on_specific_page_screenshot_twelve,
+#component-prayer_app_project_div_on_specific_page_screenshot_thirteen,
+#component-prayer_app_project_div_on_specific_page_screenshot_fourteen,
+#component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
+    margin-top: 20px;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_four,
+#component-prayer_app_project_div_on_specific_page_screenshot_five,
+#component-prayer_app_project_div_on_specific_page_screenshot_six,
+#component-prayer_app_project_div_on_specific_page_screenshot_seven,
+#component-prayer_app_project_div_on_specific_page_screenshot_eight,
+#component-prayer_app_project_div_on_specific_page_screenshot_nine,
+#component-prayer_app_project_div_on_specific_page_screenshot_ten,
+#component-prayer_app_project_div_on_specific_page_screenshot_eleven,
+#component-prayer_app_project_div_on_specific_page_screenshot_twelve,
+#component-prayer_app_project_div_on_specific_page_screenshot_thirteen,
+#component-prayer_app_project_div_on_specific_page_screenshot_fourteen,
+#component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
+    height: 300px;
+    background-size: 200px 290px;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_one,
+#component-prayer_app_project_div_on_specific_page_screenshot_three {
+    height: 250px;
+    background-size: 200px 240px;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_one {
+    background-image: url(../Images/Prayer_App_Screenshots/Signup_Page.JPG);
+    margin-top: 80px;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_two {
+    height: 350px;
+    background-image: url(../Images/Prayer_App_Screenshots/Signup_Page_Form.JPG);
+    background-size: 200px 340px;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_three {
+    background-image: url(../Images/Prayer_App_Screenshots/Log_In_Form.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_four {
+    background-image: url(../Images/Prayer_App_Screenshots/New_Prayer_Request_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_five {
+    background-image: url(../Images/Prayer_App_Screenshots/Prayer_List_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_six {
+    background-image: url(../Images/Prayer_App_Screenshots/Archived_Prayers.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_seven {
+    background-image: url(../Images/Prayer_App_Screenshots/My_Prayer_Requests_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_eight {
+    background-image: url(../Images/Prayer_App_Screenshots/Groups_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_nine {
+    background-image: url(../Images/Prayer_App_Screenshots/New_Prayer_Group_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_ten {
+    background-image: url(../Images/Prayer_App_Screenshots/Join_New_Group_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_eleven {
+    background-image: url(../Images/Prayer_App_Screenshots/Specific_Group_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_twelve {
+    background-image: url(../Images/Prayer_App_Screenshots/Group_Settings.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_thirteen {
+    background-image: url(../Images/Prayer_App_Screenshots/Settings_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_fourteen {
+    height: 400px;
+    background-image: url(../Images/Prayer_App_Screenshots/Edit_Profile_Page.JPG);
+    background-size: 200px 390px;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
+    background-image: url(../Images/Prayer_App_Screenshots/Report_A_Problem_Page.JPG);
+}
+
+#component-prayer_app_screenshots_section {
+    margin-bottom: 120px;
+}
+
 .component-footer_background_color__a,
 #wider_screen_drop_down_menu_email,
 .component-div_margin_h2_after_description,
@@ -144,8 +259,8 @@ nav {
 TEST FIRST BEFORE DELETING
 .component-drop_down_menu--variant-modifier,
 .component-main_content {
-    top: 0;
-    left: 0;
+top: 0;
+left: 0;
 }
 */
 
@@ -169,7 +284,7 @@ TEST FIRST BEFORE DELETING
 /* To create overlay effect with drop-down menu 
 TEST FIRST BEFORE DELETING
 .component-main_content {
-    position: absolute;
+position: absolute;
 }
 */
 
@@ -292,7 +407,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
 .component-drop_down_menu_close_animation,
 .component-drop_down_menu_show_animation,
 .component-drop_down_menu_hide_animation {
-     animation-duration: .5s;
+    animation-duration: .5s;
 }
 
 .component-drop_down_menu_open_animation {
@@ -384,7 +499,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
 a {
     transition: color 0.3s;
 }
- 
+
 /* !important to remove default styling from regular a:hover */
 .component-footer_background_color__a:hover {
     color: #E6E6E6 !important;
