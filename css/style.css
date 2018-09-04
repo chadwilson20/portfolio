@@ -54,14 +54,18 @@ a {
     border-bottom: 1px solid white;
 }
 
+.component-project_title_link_margin {
+    margin-top: 20px;
+}
+
 .component-prayer_app_project_div {
+    display: inline-block;
     width: 100%;
     height: 280px;
     background-color: #E6E6E6;
     background-image: url(../Images/favico.ico);
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 15px;
 }
 
 .component-prayer_app_project_div_projects_page {
@@ -558,6 +562,24 @@ a {
     }
 }
 
+@media only screen and (min-width: 373px) and (max-width: 767px) {
+    .component-prayer_app_project_div {
+        height: calc(280px + 70 * (100vw - 373px) / 394); 
+    } 
+}
+
+@media only screen and (min-width: 768px) {
+    .component-prayer_app_project_div {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .component-prayer_app_project_div {
+        height: calc(280px + 40 * (100vw - 768px) / 232); 
+    } 
+}
+
 @media only screen and (min-width: 772px) {
     .component-header__left-div {
         width: 25%;
@@ -622,5 +644,17 @@ a {
     }
     .component-div_width {
         width: 60%;
+    }
+    .component-project_and_title_div {
+        display: none;
+    }
+    .component-prayer_app_project_div {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .component-prayer_app_project_div {
+        width: 540px;
     }
 }
