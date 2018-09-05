@@ -150,7 +150,7 @@ a {
 
 .component-prayer_app_project_div_on_specific_page {
     width: 100%;
-    height: 180px;
+    height: 160px;
     background-color: #E6E6E6;
     background-image: url(../Images/favico.ico);
     background-repeat: no-repeat;
@@ -164,6 +164,8 @@ a {
     background-color: #E6E6E6;
     background-repeat: no-repeat;
     background-position: center;
+    height: 160px;
+    background-size: 130px 150px;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_two,
@@ -183,26 +185,9 @@ a {
     margin-top: 20px;
 }
 
-#component-prayer_app_project_div_on_specific_page_screenshot_four,
-#component-prayer_app_project_div_on_specific_page_screenshot_five,
-#component-prayer_app_project_div_on_specific_page_screenshot_six,
-#component-prayer_app_project_div_on_specific_page_screenshot_seven,
-#component-prayer_app_project_div_on_specific_page_screenshot_eight,
-#component-prayer_app_project_div_on_specific_page_screenshot_nine,
-#component-prayer_app_project_div_on_specific_page_screenshot_ten,
-#component-prayer_app_project_div_on_specific_page_screenshot_eleven,
-#component-prayer_app_project_div_on_specific_page_screenshot_twelve,
-#component-prayer_app_project_div_on_specific_page_screenshot_thirteen,
-#component-prayer_app_project_div_on_specific_page_screenshot_fourteen,
-#component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
-    height: 300px;
-    background-size: 200px 290px;
-}
-
-#component-prayer_app_project_div_on_specific_page_screenshot_one,
-#component-prayer_app_project_div_on_specific_page_screenshot_three {
-    height: 250px;
-    background-size: 200px 240px;
+#component-prayer_app_project_div_on_specific_page_screenshot_two,
+#component-prayer_app_project_div_on_specific_page_screenshot_fourteen {
+    background-size: 100px 150px;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_one {
@@ -211,9 +196,7 @@ a {
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_two {
-    height: 350px;
     background-image: url(../Images/Prayer_App_Screenshots/Signup_Page_Form.JPG);
-    background-size: 200px 340px;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_three {
@@ -261,9 +244,7 @@ a {
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_fourteen {
-    height: 400px;
     background-image: url(../Images/Prayer_App_Screenshots/Edit_Profile_Page.JPG);
-    background-size: 200px 390px;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
@@ -405,12 +386,15 @@ seperate divs on the page */
 }
 
 .component-header__left-div,
+.component-header__left-div_prayer_app,
 .component-drop_down_menu--variant-modifier {
     width: 90%;
 }
 
-.component-header__right-div {
+.component-header__right-div,
+.component-header__right-div_prayer_app {
     width: 10%;
+    text-align: right;
 }
 
 /* Had to decrease margin bottom because of line-height on navs */
@@ -635,6 +619,12 @@ a {
 @media only screen and (min-width: 373px) and (max-width: 767px) {
     .component-prayer_app_project_div {
         height: calc(280px + 70 * (100vw - 373px) / 394); 
+    } 
+}
+
+@media only screen and (min-width: 373px) and (max-width: 1000px) {
+    .component-prayer_app_project_div_on_specific_page {
+        height: calc(160px + 340 * (100vw - 373px) / 627); 
     } 
 }
 

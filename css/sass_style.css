@@ -60,6 +60,22 @@ p {
     p {
       font-size: 25px; } }
 
+.component-div_margin__paragraph_description_text_size {
+  property: 16px;
+  property: 23px; }
+  @media (min-width: 373px) {
+    .component-div_margin__paragraph_description_text_size {
+      font-size: calc(16px + 9 * (100vw - 373px) / 827); } }
+  @media (min-width: 1200px) {
+    .component-div_margin__paragraph_description_text_size {
+      font-size: 25px; } }
+  @media (min-width: 373px) {
+    .component-div_margin__paragraph_description_text_size {
+      line-height: calc(23px + 15 * (100vw - 373px) / 827); } }
+  @media (min-width: 1200px) {
+    .component-div_margin__paragraph_description_text_size {
+      line-height: 38px; } }
+
 p, #component-description_div__h2 {
   property: 30px; }
   @media (min-width: 373px) {

@@ -73,6 +73,11 @@ p {
     @include responsive-text-width(font-size, 373px, 1200px, 18px, 25px);
 }
 
+.component-div_margin__paragraph_description_text_size {
+    @include responsive-text-width(font-size, 373px, 1200px, 16px, 25px);
+    @include responsive-text-width(line-height, 373px, 1200px, 23px, 38px);
+}
+
 p, #component-description_div__h2 {
     @include responsive-text-width(line-height, 373px, 1200px, 30px, 55px);
 }
