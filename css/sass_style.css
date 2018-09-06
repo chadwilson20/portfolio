@@ -65,10 +65,10 @@ p {
   property: 23px; }
   @media (min-width: 373px) {
     .component-div_margin__paragraph_description_text_size {
-      font-size: calc(16px + 9 * (100vw - 373px) / 827); } }
+      font-size: calc(16px + 7 * (100vw - 373px) / 827); } }
   @media (min-width: 1200px) {
     .component-div_margin__paragraph_description_text_size {
-      font-size: 25px; } }
+      font-size: 23px; } }
   @media (min-width: 373px) {
     .component-div_margin__paragraph_description_text_size {
       line-height: calc(23px + 15 * (100vw - 373px) / 827); } }

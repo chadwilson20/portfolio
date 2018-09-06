@@ -100,6 +100,10 @@ a {
     background-position: center;
 }
 
+.open_project_info {
+    cursor: pointer;
+}
+
 #prayer_app_title_font_size_for_projects_page {
     font-size: 27px;
 }
@@ -165,7 +169,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     height: 160px;
-    background-size: 130px 150px;
+    background-size: 40% 95%;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_two,
@@ -183,11 +187,6 @@ a {
 #component-prayer_app_project_div_on_specific_page_screenshot_fourteen,
 #component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
     margin-top: 20px;
-}
-
-#component-prayer_app_project_div_on_specific_page_screenshot_two,
-#component-prayer_app_project_div_on_specific_page_screenshot_fourteen {
-    background-size: 100px 150px;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_one {
@@ -623,7 +622,8 @@ a {
 }
 
 @media only screen and (min-width: 373px) and (max-width: 1000px) {
-    .component-prayer_app_project_div_on_specific_page {
+    .component-prayer_app_project_div_on_specific_page,
+    .component-prayer_app_project_div_on_specific_page_screenshots {
         height: calc(160px + 340 * (100vw - 373px) / 627); 
     } 
 }
