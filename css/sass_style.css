@@ -60,6 +60,22 @@ p {
     p {
       font-size: 25px; } }
 
+.component-div_margin__paragraph_description_text_size {
+  property: 16px;
+  property: 23px; }
+  @media (min-width: 373px) {
+    .component-div_margin__paragraph_description_text_size {
+      font-size: calc(16px + 7 * (100vw - 373px) / 827); } }
+  @media (min-width: 1200px) {
+    .component-div_margin__paragraph_description_text_size {
+      font-size: 23px; } }
+  @media (min-width: 373px) {
+    .component-div_margin__paragraph_description_text_size {
+      line-height: calc(23px + 15 * (100vw - 373px) / 827); } }
+  @media (min-width: 1200px) {
+    .component-div_margin__paragraph_description_text_size {
+      line-height: 38px; } }
+
 p, #component-description_div__h2 {
   property: 30px; }
   @media (min-width: 373px) {
@@ -103,6 +119,15 @@ a, .component-footer_background_color__first_h2_margin {
       font-size: calc(20px + 5 * (100vw - 373px) / 827); } }
   @media (min-width: 1200px) {
     a, .component-footer_background_color__first_h2_margin {
+      font-size: 25px; } }
+
+h3, .component-div_margin__paragraph_text_size {
+  property: 15px; }
+  @media (min-width: 373px) {
+    h3, .component-div_margin__paragraph_text_size {
+      font-size: calc(15px + 10 * (100vw - 373px) / 827); } }
+  @media (min-width: 1200px) {
+    h3, .component-div_margin__paragraph_text_size {
       font-size: 25px; } }
 
 /*# sourceMappingURL=sass_style.css.map */

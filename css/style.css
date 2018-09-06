@@ -12,14 +12,32 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: normal;
 }
 
+h3 {
+    margin-bottom: 12px;
+    color: #E6E6E6;
+}
+
+.component-div_margin__paragraph_description_text_size {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+h3, .component-div_margin__paragraph_text_size {
+    font-size: 15px;
+}
+
+.component-div_margin__paragraph_text_size {
+    line-height: 25px;
+}
+
 /* .component-footer_background_color__email_border_color:
 this is to add a margin to the bottom of the green email in the footer */
-h1,h2,h3,h4,h5,h6,p,
+h1,h2,h4,h5,h6,p,
 .component-footer_background_color__email_border_color {
     margin-bottom: 20px;
 }
 
-h1,h2,h3,h4,h5,h6,p,a {
+h1,h2,h4,h5,h6,p,a {
     color: #34302D;
 }
 
@@ -36,16 +54,231 @@ a {
     border-bottom: 1px solid white;
 }
 
+.component-project_title_link_margin {
+    margin-top: 20px;
+}
+
+.component-prayer_app_project_div_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #E6E6E6;
+    opacity: 0;
+    transition: .3s;
+    position: relative;
+    padding: 10% 5%;
+    box-sizing: border-box;
+}
+
+.component-prayer_app_project_div_overlay_font_color,
+.component-prayer_app_project_div_overlay_description {
+    color: white;
+}
+
+.component-prayer_app_project_div_overlay_divide {
+    background-color: white;
+    height: 2px;
+    width: 18px;
+}
+
+.component-prayer_app_project_div_overlay_description {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4%;
+    line-height: inherit;
+    transition: .3s;
+}
+
+.component-prayer_app_project_div {
+    background-color: #E6E6E6;
+    display: inline-block;
+    width: 100%;
+    height: 280px;
+    z-index: 1;
+    background-image: url(../Images/favico.ico);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.open_project_info {
+    cursor: pointer;
+}
+
+#prayer_app_title_font_size_for_projects_page {
+    font-size: 27px;
+}
+
+.component-prayer_app_project_div:hover .component-prayer_app_project_div_overlay {
+    opacity: 1;
+    padding: 7% 5%;
+}
+
+.component-prayer_app_project_div:hover .component-prayer_app_project_div_overlay_description {
+    margin-bottom: 7%;
+}
+
+.component-prayer_app_project_div_projects_page {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #E6E6E6;
+    background-image: url(../Images/favico.ico);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.component-prayer_app_project_div_overlay_description_projects_page {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4%;
+    transition: .3s;
+}
+
+.component-prayer_app_project_div_overlay_description_projects_page p {
+    line-height: 25px;
+    color: white;
+    margin-bottom: 7px;
+    font-size: 22px;
+}
+
+.component-prayer_app_project_div_projects_page:hover .component-prayer_app_project_div_overlay {
+    opacity: 1;
+    padding: 7% 5%;
+}
+
+.component-prayer_app_project_div_projects_page:hover .component-prayer_app_project_div_overlay_description_projects_page {
+    margin-bottom: 7%;
+}
+
+.component-prayer_app_project_div_on_specific_page {
+    width: 100%;
+    height: 160px;
+    background-color: #E6E6E6;
+    background-image: url(../Images/favico.ico);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 200px;
+    margin-top: 40px;
+}
+
+.component-prayer_app_project_div_on_specific_page_screenshots {
+    width: 100%;
+    background-color: #E6E6E6;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 160px;
+    background-size: 40% 95%;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_two,
+#component-prayer_app_project_div_on_specific_page_screenshot_three,
+#component-prayer_app_project_div_on_specific_page_screenshot_four,
+#component-prayer_app_project_div_on_specific_page_screenshot_five,
+#component-prayer_app_project_div_on_specific_page_screenshot_six,
+#component-prayer_app_project_div_on_specific_page_screenshot_seven,
+#component-prayer_app_project_div_on_specific_page_screenshot_eight,
+#component-prayer_app_project_div_on_specific_page_screenshot_nine,
+#component-prayer_app_project_div_on_specific_page_screenshot_ten,
+#component-prayer_app_project_div_on_specific_page_screenshot_eleven,
+#component-prayer_app_project_div_on_specific_page_screenshot_twelve,
+#component-prayer_app_project_div_on_specific_page_screenshot_thirteen,
+#component-prayer_app_project_div_on_specific_page_screenshot_fourteen,
+#component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
+    margin-top: 20px;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_one {
+    background-image: url(../Images/Prayer_App_Screenshots/Signup_Page.JPG);
+    margin-top: 80px;
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_two {
+    background-image: url(../Images/Prayer_App_Screenshots/Signup_Page_Form.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_three {
+    background-image: url(../Images/Prayer_App_Screenshots/Log_In_Form.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_four {
+    background-image: url(../Images/Prayer_App_Screenshots/New_Prayer_Request_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_five {
+    background-image: url(../Images/Prayer_App_Screenshots/Prayer_List_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_six {
+    background-image: url(../Images/Prayer_App_Screenshots/Archived_Prayers.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_seven {
+    background-image: url(../Images/Prayer_App_Screenshots/My_Prayer_Requests_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_eight {
+    background-image: url(../Images/Prayer_App_Screenshots/Groups_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_nine {
+    background-image: url(../Images/Prayer_App_Screenshots/New_Prayer_Group_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_ten {
+    background-image: url(../Images/Prayer_App_Screenshots/Join_New_Group_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_eleven {
+    background-image: url(../Images/Prayer_App_Screenshots/Specific_Group_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_twelve {
+    background-image: url(../Images/Prayer_App_Screenshots/Group_Settings.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_thirteen {
+    background-image: url(../Images/Prayer_App_Screenshots/Settings_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_fourteen {
+    background-image: url(../Images/Prayer_App_Screenshots/Edit_Profile_Page.JPG);
+}
+
+#component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
+    background-image: url(../Images/Prayer_App_Screenshots/Report_A_Problem_Page.JPG);
+}
+
+#component-prayer_app_screenshots_section {
+    margin-bottom: 120px;
+}
+
 .component-footer_background_color__a,
 #wider_screen_drop_down_menu_email,
 .component-div_margin_h2_after_description,
-.component-footer_background_color__a {
+.component-project_descriptions {
     color: #E6E6E6;
+}
+
+.component-project_descriptions,
+.component-div_margin__paragraph_text_size {
+    margin-bottom: 0px !important;
+}
+
+.component-project_title {
+    margin-bottom: 5px !important;
 }
 
 #green_email_two,
 .component-footer_background_color__a {
     border-bottom-color: #34302D;
+}
+
+#test {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
 }
 
 .component-footer_background_color__h2_after_first {
@@ -76,12 +309,14 @@ nav {
     position: relative;
 }
 
-/* To create overlay effect with drop-down menu */
+/* To create overlay effect with drop-down menu 
+TEST FIRST BEFORE DELETING
 .component-drop_down_menu--variant-modifier,
 .component-main_content {
-    top: 0;
-    left: 0;
+top: 0;
+left: 0;
 }
+*/
 
 /* To create overlay effect with drop-down menu */
 .component-drop_down_menu--variant-modifier {
@@ -95,14 +330,17 @@ nav {
 /* display:flex so elements inside div line up side-by-side */
 .component-drop_down_menu--variant-modifier,
 .component-div_margin__header_div,
-.wider_screen_footer_div_flex {
+.wider_screen_footer_div_flex,
+.component-specific_projects_info_div {
     display: flex;
 }
 
-/* To create overlay effect with drop-down menu */
+/* To create overlay effect with drop-down menu 
+TEST FIRST BEFORE DELETING
 .component-main_content {
-    position: absolute;
+position: absolute;
 }
+*/
 
 .component-header__left-div__nav > a {
     font-size: 23px;
@@ -123,18 +361,39 @@ seperate divs on the page */
     margin: 5% 5% 120px 5%;
 }
 
+.component-div_margin__specific_projects_pages {
+    margin-bottom: 30px !important;
+}
+
+.component-div_margin__specific_projects_pages_first_div {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+.component-div_margin__specific_projects_pages_last_div {
+    margin-bottom: 0px !important;
+}
+
+.component-specific_projects_info_div_hidden {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .component-header_green_bar {
     height: 2px;
     background-color: #86C543;
 }
 
 .component-header__left-div,
+.component-header__left-div_prayer_app,
 .component-drop_down_menu--variant-modifier {
     width: 90%;
 }
 
-.component-header__right-div {
+.component-header__right-div,
+.component-header__right-div_prayer_app {
     width: 10%;
+    text-align: right;
 }
 
 /* Had to decrease margin bottom because of line-height on navs */
@@ -205,7 +464,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
 .component-drop_down_menu_close_animation,
 .component-drop_down_menu_show_animation,
 .component-drop_down_menu_hide_animation {
-     animation-duration: .5s;
+    animation-duration: .5s;
 }
 
 .component-drop_down_menu_open_animation {
@@ -297,7 +556,7 @@ display: inline-block to create the margin-botton I needed to seperate content *
 a {
     transition: color 0.3s;
 }
- 
+
 /* !important to remove default styling from regular a:hover */
 .component-footer_background_color__a:hover {
     color: #E6E6E6 !important;
@@ -329,10 +588,10 @@ a {
 .wider_screen_size_header_navigation,
 #wider_screen_drop_down_menu_email,
 .wider_screen_footer_div,
-.widest_screen_footer_div {
+.widest_screen_footer_div,
+.component-specific_projects_info_div_hidden {
     display: none;
 }
-
 
 /* lines 335 - 418 */
 /* MEDIA QUERIES */
@@ -354,6 +613,32 @@ a {
     .projects_link {
         margin-right: 0px !important;
     }
+}
+
+@media only screen and (min-width: 373px) and (max-width: 767px) {
+    .component-prayer_app_project_div {
+        height: calc(280px + 70 * (100vw - 373px) / 394); 
+    } 
+}
+
+@media only screen and (min-width: 373px) and (max-width: 1000px) {
+    .component-prayer_app_project_div_on_specific_page,
+    .component-prayer_app_project_div_on_specific_page_screenshots {
+        height: calc(160px + 340 * (100vw - 373px) / 627); 
+    } 
+}
+
+@media only screen and (min-width: 768px) {
+    .component-prayer_app_project_div,
+    .component-prayer_app_project_div_projects_page {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .component-prayer_app_project_div {
+        height: calc(280px + 40 * (100vw - 768px) / 232); 
+    } 
 }
 
 @media only screen and (min-width: 772px) {
@@ -399,12 +684,6 @@ a {
     }
 }
 
-@media only screen and (min-height: 100px) {
-    .intro_div {
-        margin-bottom: 300px;
-    }
-}
-
 @media only screen and (min-width: 1000px) {
     .wider_screen_footer_div {
         display: none;
@@ -426,5 +705,18 @@ a {
     }
     .component-div_width {
         width: 60%;
+    }
+    .component-project_and_title_div {
+        display: none;
+    }
+    .component-prayer_app_project_div {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .component-prayer_app_project_div,
+    .component-prayer_app_project_div_projects_page {
+        width: 540px;
     }
 }

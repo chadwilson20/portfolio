@@ -41,39 +41,6 @@ function RemoveAllRanges(selection) {
 }
 
 $(document).ready(function() {
-    /* Lines 36-60 resets links on browser refresh */
-    /* DO NOT DELETE THIS CODE UNTIL TESTING IS DONE ON ALL BROWSERS
-    var links = document.links;
-    for(var i = 0; i < links.length; i++)
-    {
-        var link = links[i];
-        $(link).css({
-            "text-decoration":"none"
-        });
-        if($(link).hasClass("component-footer_background_color__a")) {
-            $(link).css({
-                "color":"#E6E6E6",
-                "border-bottom":"1px solid #34302D"
-            });
-        }
-        else {
-            $(link).css({
-                "color":"#34302D",
-                "border-bottom":"1px solid white"
-            });
-        }
-    }*/
-    /* This link does not have component-footer_background_color__a class
-    so I had to write code for it separately */
-    /*
-    $("#green_email_two").css({
-        "border-bottom-color":"#34302D"
-    });
-
-    $("#wider_screen_drop_down_menu_email").css({
-        "color":"#E6E6E6"
-    });*/
-
     /* This function changes styling of links when they are clicked */
     $("a").click(function() {
         if($(this).hasClass("component-footer_background_color__a")) {
@@ -149,5 +116,9 @@ $(document).ready(function() {
         }
         $(".component-main_content").addClass("component-drop_down_menu_close_animation");
         $(".component-main_content").css({"pointer-events":"auto"});
+    });
+    
+    $(".open_project_info").click(function() {
+        $(".component-specific_projects_info_div_hidden").slideToggle(400);
     });
 });
