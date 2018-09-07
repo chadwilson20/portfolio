@@ -119,6 +119,13 @@ $(document).ready(function() {
     });
     
     $(".open_project_info").click(function() {
-        $(".component-specific_projects_info_div_hidden").slideToggle(400);
+        if(screen.width > 0 && screen.width <= 771)
+            {
+               $(".component-specific_projects_info_div_hidden").slideToggle(400); 
+            }
+        else 
+            {
+                $("#prayer_app_drop_down_menu_tablet_view").slideToggle(400);
+            }
     });
 });
