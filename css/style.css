@@ -361,17 +361,27 @@ seperate divs on the page */
     margin: 5% 5% 120px 5%;
 }
 
+.prayer_app_drop_down_menu_tablet_view_left_div,
+.prayer_app_drop_down_menu_tablet_view_right_div {
+    width: 50%;
+}
+
 .component-div_margin__specific_projects_pages {
     margin-bottom: 30px !important;
 }
 
 .component-div_margin__specific_projects_pages_first_div {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .component-div_margin__specific_projects_pages_last_div {
-    margin-bottom: 0px !important;
+    margin-bottom: 0px;
+}
+
+.component-div_margin__specific_projects_pages_first_div_right_tablet_view {
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .component-specific_projects_info_div_hidden {
