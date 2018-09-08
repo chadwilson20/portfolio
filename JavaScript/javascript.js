@@ -40,6 +40,15 @@ function RemoveAllRanges(selection) {
     selection.removeAllRanges();
 }
 
+$(window).resize(function() {
+    if($(".component-specific_projects_info_div_hidden").is(':visible')) {
+        $(".component-specific_projects_info_div_hidden").slideUp(400);
+    }
+    else if($("#prayer_app_drop_down_menu_tablet_view").is(':visible')) {
+        $("#prayer_app_drop_down_menu_tablet_view").slideUp(400);
+    }
+});
+
 $(document).ready(function() {
     /* This function changes styling of links when they are clicked */
     $("a").click(function() {

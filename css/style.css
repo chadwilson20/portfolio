@@ -394,7 +394,8 @@ seperate divs on the page */
     margin-bottom: 0px;
 }
 
-.component-specific_projects_info_div_hidden {
+.component-specific_projects_info_div_hidden,
+.component-div_margin__projects_desktop_view {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -609,7 +610,8 @@ a {
 #wider_screen_drop_down_menu_email,
 .wider_screen_footer_div,
 .widest_screen_footer_div,
-.component-specific_projects_info_div_hidden {
+.component-specific_projects_info_div_hidden,
+.component-div_margin__specific_projects_page_desktop_view {
     display: none;
 }
 
@@ -739,6 +741,12 @@ a {
     }
     .component-prayer_app_project_div {
         height: 400px;
+    }
+    .component-div_margin__specific_projects_page_mobile_view {
+        display: none;
+    }
+    .component-div_margin__specific_projects_page_desktop_view {
+        display: flex;
     }
 }
 
