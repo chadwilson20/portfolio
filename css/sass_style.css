@@ -121,4 +121,13 @@ a, .component-footer_background_color__first_h2_margin {
     a, .component-footer_background_color__first_h2_margin {
       font-size: 25px; } }
 
+.component-prayer_app_project_div_on_specific_page {
+  property: 325px; }
+  @media (min-width: 1000px) {
+    .component-prayer_app_project_div_on_specific_page {
+      height: calc(325px + 75 * (100vw - 1000px) / 200); } }
+  @media (min-width: 1200px) {
+    .component-prayer_app_project_div_on_specific_page {
+      height: 400px; } }
+
 /*# sourceMappingURL=sass_style.css.map */
