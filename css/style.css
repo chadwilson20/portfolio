@@ -22,11 +22,11 @@ h3 {
     line-height: 23px;
 }
 
-h3, .component-div_margin__paragraph_text_size {
+h3, .component-div_margin__paragraph_text_size, .component-div_margin__paragraph_margin {
     font-size: 15px;
 }
 
-.component-div_margin__paragraph_text_size {
+.component-div_margin__paragraph_text_size, .component-div_margin__paragraph_margin {
     line-height: 25px;
 }
 
@@ -117,6 +117,11 @@ a {
     margin-bottom: 7%;
 }
 
+.component-div_margin__specific_projects_pages_paragraphs_desktop_view {
+    margin-bottom: 30px;
+    margin-top: 5%;
+}
+
 .component-prayer_app_project_div_projects_page {
     display: inline-block;
     position: relative;
@@ -169,7 +174,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     height: 160px;
-    background-size: 40% 95%;
+    background-size: 35% 95%;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_two,
@@ -196,6 +201,7 @@ a {
 
 #component-prayer_app_project_div_on_specific_page_screenshot_two {
     background-image: url(../Images/Prayer_App_Screenshots/Signup_Page_Form.JPG);
+    background-size: 25% 95%;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_three {
@@ -244,6 +250,7 @@ a {
 
 #component-prayer_app_project_div_on_specific_page_screenshot_fourteen {
     background-image: url(../Images/Prayer_App_Screenshots/Edit_Profile_Page.JPG);
+    background-size: 25% 95%;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
@@ -259,6 +266,14 @@ a {
 .component-div_margin_h2_after_description,
 .component-project_descriptions {
     color: #E6E6E6;
+}
+
+.component-project_descriptions {
+    font-size: 18px !important;
+}
+
+.component-div_margin__paragraph_margin {
+    margin-bottom: 5px !important;
 }
 
 .component-project_descriptions,
@@ -361,22 +376,49 @@ seperate divs on the page */
     margin: 5% 5% 120px 5%;
 }
 
+#prayer_app_drop_down_menu_tablet_view {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.prayer_app_drop_down_menu_tablet_view_left_div,
+.prayer_app_drop_down_menu_tablet_view_right_div {
+    width: 50%;
+}
+
 .component-div_margin__specific_projects_pages {
     margin-bottom: 30px !important;
 }
 
 .component-div_margin__specific_projects_pages_first_div {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .component-div_margin__specific_projects_pages_last_div {
-    margin-bottom: 0px !important;
+    margin-bottom: 0px;
+}
+
+.component-div_margin__specific_projects_pages_first_div_right_tablet_view {
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .component-specific_projects_info_div_hidden {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.component-div_margin__projects_desktop_view_left_div {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 25%;
+}
+
+.component-div_margin__projects_desktop_view_right_div {
+    margin-top: 10px;
+    width: 75%;
 }
 
 .component-header_green_bar {
@@ -589,7 +631,8 @@ a {
 #wider_screen_drop_down_menu_email,
 .wider_screen_footer_div,
 .widest_screen_footer_div,
-.component-specific_projects_info_div_hidden {
+.component-specific_projects_info_div_hidden,
+.component-div_margin__specific_projects_page_desktop_view {
     display: none;
 }
 
@@ -676,6 +719,15 @@ a {
     .contact_header {
         margin-bottom: 40px;
     }
+    h3, .component-div_margin__paragraph_text_size, .component-div_margin__paragraph_margin {
+        font-size: 16px;
+    }
+    h3 {
+        margin-bottom: 17px;
+    }
+    .component-div_margin__paragraph_margin {
+        margin-bottom: 8px !important;
+    }
 }
 
 @media only screen and (min-height: 537px) {
@@ -711,6 +763,22 @@ a {
     }
     .component-prayer_app_project_div {
         height: 400px;
+    }
+    .component-div_margin__specific_projects_page_mobile_view {
+        display: none;
+    }
+    .component-div_margin__specific_projects_page_desktop_view {
+        display: flex;
+    }
+    .component-prayer_app_project_div_on_specific_page {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .component-project_descriptions {
+        font-size: 23px !important;
+    }
+    .component-project_title {
+        font-size: 25px;
     }
 }
 
