@@ -174,7 +174,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     height: 160px;
-    background-size: 40% 95%;
+    background-size: 35% 95%;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_two,
@@ -201,6 +201,7 @@ a {
 
 #component-prayer_app_project_div_on_specific_page_screenshot_two {
     background-image: url(../Images/Prayer_App_Screenshots/Signup_Page_Form.JPG);
+    background-size: 25% 95%;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_three {
@@ -249,6 +250,7 @@ a {
 
 #component-prayer_app_project_div_on_specific_page_screenshot_fourteen {
     background-image: url(../Images/Prayer_App_Screenshots/Edit_Profile_Page.JPG);
+    background-size: 25% 95%;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_fifteen {

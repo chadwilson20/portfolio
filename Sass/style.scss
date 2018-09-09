@@ -98,6 +98,7 @@ a, .component-footer_background_color__first_h2_margin {
     @include responsive-text-width(font-size, 373px, 1200px, 20px, 25px);
 }
 
-.component-prayer_app_project_div_on_specific_page {
+.component-prayer_app_project_div_on_specific_page,
+.component-prayer_app_project_div_on_specific_page_screenshots {
     @include responsive-text-width(height, 1000px, 1200px, 325px, 400px);
 }
