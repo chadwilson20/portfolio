@@ -787,4 +787,11 @@ a {
     .component-prayer_app_project_div_projects_page {
         width: 540px;
     }
+    .component-div_margin__specific_projects_page_desktop_view,
+    .component-div_margin_header_specific_projects_page {
+        width: 1062px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
 }
