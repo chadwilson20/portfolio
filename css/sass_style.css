@@ -7,10 +7,10 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
     property: 0px; } }
   @media only screen and (max-width: 1000px) and (min-height: 367px) {
     .header_margin {
-      margin-bottom: calc(0px + 120 * (100vh - 367px) / 110); } }
+      margin-bottom: calc(0px + 130 * (100vh - 367px) / 110); } }
   @media only screen and (max-width: 1000px) and (min-height: 477px) {
     .header_margin {
-      margin-bottom: 120px; } }
+      margin-bottom: 130px; } }
 
 @media only screen and (max-width: 1000px) {
   .intro_div {
