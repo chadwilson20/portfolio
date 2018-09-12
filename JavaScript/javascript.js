@@ -47,12 +47,6 @@ $(window).resize(function() {
     else if($("#prayer_app_drop_down_menu_tablet_view").is(':visible')) {
         $("#prayer_app_drop_down_menu_tablet_view").slideUp(400);
     }
-    /*var zoomWidth = (window.outerWidth - 8) / window.innerWidth;
-    if(zoomWidth <= .76) {
-        $(".header_margin").css({
-            "margin-bottom":"900px"
-        });
-    }*/
 });
 
 $(document).ready(function() {
