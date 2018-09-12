@@ -324,15 +324,6 @@ nav {
     position: relative;
 }
 
-/* To create overlay effect with drop-down menu 
-TEST FIRST BEFORE DELETING
-.component-drop_down_menu--variant-modifier,
-.component-main_content {
-top: 0;
-left: 0;
-}
-*/
-
 /* To create overlay effect with drop-down menu */
 .component-drop_down_menu--variant-modifier {
     opacity: 0;
@@ -350,14 +341,7 @@ left: 0;
     display: flex;
 }
 
-/* To create overlay effect with drop-down menu 
-TEST FIRST BEFORE DELETING
-.component-main_content {
-position: absolute;
-}
-*/
-
-.component-header__left-div__nav > a {
+nav > a {
     font-size: 23px;
 }
 
