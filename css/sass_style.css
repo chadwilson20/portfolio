@@ -14,10 +14,10 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
       margin-bottom: 130px; } }
   @media only screen and (max-width: 1000px) and (min-height: 626px) {
     .header_margin {
-      margin-bottom: calc(130px + 220 * (100vh - 626px) / 1294); } }
+      margin-bottom: calc(130px + 470 * (100vh - 626px) / 1294); } }
   @media only screen and (max-width: 1000px) and (min-height: 1920px) {
     .header_margin {
-      margin-bottom: 350px; } }
+      margin-bottom: 600px; } }
 
 @media only screen and (max-width: 1000px) {
   .intro_div {
@@ -41,10 +41,10 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
       margin-bottom: 120px; } }
   @media only screen and (min-width: 1000px) and (min-height: 626px) {
     .header_margin {
-      margin-bottom: calc(120px + 230 * (100vh - 626px) / 1294); } }
+      margin-bottom: calc(120px + 480 * (100vh - 626px) / 1294); } }
   @media only screen and (min-width: 1000px) and (min-height: 1920px) {
     .header_margin {
-      margin-bottom: 350px; } }
+      margin-bottom: 600px; } }
 
 @media only screen and (min-width: 1000px) {
   .intro_div {

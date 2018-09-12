@@ -51,7 +51,7 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 @media only screen and (max-width: 1000px) {
     .header_margin {
         @include responsive-text-height(margin-bottom, 367px, 477px, 0px, 130px);
-        @include responsive-text-height(margin-bottom, 626px, 1920px, 130px, 350px);
+        @include responsive-text-height(margin-bottom, 626px, 1920px, 130px, 600px);
     }
     .intro_div {
         @include responsive-text-height(margin-top, 367px, 477px, 0%, 5%);
@@ -61,7 +61,7 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 @media only screen and (min-width: 1000px) {
     .header_margin {
         @include responsive-text-height(margin-bottom, 478px, 625px, 0px, 120px);
-        @include responsive-text-height(margin-bottom, 626px, 1920px, 120px, 350px);
+        @include responsive-text-height(margin-bottom, 626px, 1920px, 120px, 600px);
     }
     .intro_div {
         @include responsive-text-height(margin-top, 478px, 625px, 0%, 5%);

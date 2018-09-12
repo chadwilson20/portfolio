@@ -47,6 +47,12 @@ $(window).resize(function() {
     else if($("#prayer_app_drop_down_menu_tablet_view").is(':visible')) {
         $("#prayer_app_drop_down_menu_tablet_view").slideUp(400);
     }
+    /*var zoomWidth = (window.outerWidth - 8) / window.innerWidth;
+    if(zoomWidth <= .76) {
+        $(".header_margin").css({
+            "margin-bottom":"900px"
+        });
+    }*/
 });
 
 $(document).ready(function() {
@@ -126,15 +132,15 @@ $(document).ready(function() {
         $(".component-main_content").addClass("component-drop_down_menu_close_animation");
         $(".component-main_content").css({"pointer-events":"auto"});
     });
-    
+
     $(".open_project_info").click(function() {
         if(screen.width > 0 && screen.width <= 771)
-            {
-               $(".component-specific_projects_info_div_hidden").slideToggle(400); 
-            }
+        {
+            $(".component-specific_projects_info_div_hidden").slideToggle(400); 
+        }
         else 
-            {
-                $("#prayer_app_drop_down_menu_tablet_view").slideToggle(400);
-            }
+        {
+            $("#prayer_app_drop_down_menu_tablet_view").slideToggle(400);
+        }
     });
 });
