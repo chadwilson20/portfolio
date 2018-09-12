@@ -4,13 +4,20 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 @media only screen and (max-width: 1000px) {
   .header_margin {
-    property: 0px; } }
+    property: 0px;
+    property: 130px; } }
   @media only screen and (max-width: 1000px) and (min-height: 367px) {
     .header_margin {
       margin-bottom: calc(0px + 130 * (100vh - 367px) / 110); } }
   @media only screen and (max-width: 1000px) and (min-height: 477px) {
     .header_margin {
       margin-bottom: 130px; } }
+  @media only screen and (max-width: 1000px) and (min-height: 626px) {
+    .header_margin {
+      margin-bottom: calc(130px + 220 * (100vh - 626px) / 1294); } }
+  @media only screen and (max-width: 1000px) and (min-height: 1920px) {
+    .header_margin {
+      margin-bottom: 350px; } }
 
 @media only screen and (max-width: 1000px) {
   .intro_div {
@@ -24,13 +31,20 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 
 @media only screen and (min-width: 1000px) {
   .header_margin {
-    property: 0px; } }
+    property: 0px;
+    property: 120px; } }
   @media only screen and (min-width: 1000px) and (min-height: 478px) {
     .header_margin {
       margin-bottom: calc(0px + 120 * (100vh - 478px) / 147); } }
   @media only screen and (min-width: 1000px) and (min-height: 625px) {
     .header_margin {
       margin-bottom: 120px; } }
+  @media only screen and (min-width: 1000px) and (min-height: 626px) {
+    .header_margin {
+      margin-bottom: calc(120px + 230 * (100vh - 626px) / 1294); } }
+  @media only screen and (min-width: 1000px) and (min-height: 1920px) {
+    .header_margin {
+      margin-bottom: 350px; } }
 
 @media only screen and (min-width: 1000px) {
   .intro_div {
