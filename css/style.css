@@ -372,7 +372,8 @@ a:hover,
 
 /* To create spacing between borders of webpage and spacing inbetween 
 seperate divs on the page */
-.component-div_margin {
+.component-div_margin,
+.component-div_margin_header_specific_projects_page {
     margin: 5% 5% 120px 5%;
 }
 
@@ -792,6 +793,18 @@ a {
         width: 1062px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 60px;
+        margin-top: 53px;
+    }
+    .component-desktop_view_margin {
+        width: 1062px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .component-div_width {
+        width: 100%;
+    }
+    .component-div_margin {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
