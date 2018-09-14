@@ -1,11 +1,6 @@
 /* Mixin courtesy of LisSass v3.5.2. Here is the link:
 https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 @mixin responsive-text-width($properties, $min-vw, $max-vw, $min-value, $max-value) {
-    @each $property in $properties {
-        #{property}: $min-value;
-    }
-
-
     @media (min-width: $min-vw) {
         @each $property in $properties {
             #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
@@ -20,10 +15,6 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 }
 
 @mixin responsive-text-height($properties, $min-vh, $max-vh, $min-value, $max-value) {
-    @each $property in $properties {
-        #{property}: $min-value;
-    }
-
     @media (min-height: $min-vh) {
         @each $property in $properties {
             #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vh - #{$min-vh}) / #{strip-unit($max-vh - $min-vh)});
@@ -43,7 +34,6 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
     @if type-of($number) == "number" and not unitless($number) {
         @return $number / ($number * 0 + 1);
     }
-
     @return $number;
 }
 
@@ -70,19 +60,17 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 
 #component-description_div__h2 {
     @include responsive-text-width(font-size, 373px, 1200px, 25px, 40px);
+    @include responsive-text-width(line-height, 373px, 1200px, 30px, 55px);
 }
 
 p {
     @include responsive-text-width(font-size, 373px, 1200px, 18px, 25px);
+    @include responsive-text-width(line-height, 373px, 1200px, 30px, 55px);
 }
 
 .component-div_margin__paragraph_description_text_size {
     @include responsive-text-width(font-size, 373px, 1200px, 16px, 23px);
     @include responsive-text-width(line-height, 373px, 1200px, 23px, 38px);
-}
-
-p, #component-description_div__h2 {
-    @include responsive-text-width(line-height, 373px, 1200px, 30px, 55px);
 }
 
 .component-footer_background_color__a, #green_email_two {
