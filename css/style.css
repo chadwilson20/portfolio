@@ -12,6 +12,8 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: normal;
 }
 
+/* This is to add spacing between the description and the description title
+on specific projects */
 h3 {
     margin-bottom: 12px;
 }
@@ -69,23 +71,27 @@ a {
     background-color: #E6E6E6;
 }
 
+/* Not visible until the user makes it visible */
 .component-prayer_app_project_div_overlay,
 .component-drop_down_menu--variant-modifier {
     opacity: 0;
 }
 
+/* Trasition the animations on hover for .3s */
 .component-prayer_app_project_div_overlay,
 .component-prayer_app_project_div_overlay_description,
 .component-prayer_app_project_div_overlay_description_projects_page {
     transition: .3s;
 }
 
+/* To keep it within the bounds of its outer div */
 .component-prayer_app_project_div_overlay,
 .component-prayer_app_project_div_projects_page,
 .component-surrounding_div {
     position: relative;
 }
 
+/* box-sizing: border-box so padding would not increase the size of div */
 .component-prayer_app_project_div_overlay {
     height: 100%;
     padding: 10% 5%;
@@ -109,6 +115,7 @@ a {
     width: 18px;
 }
 
+/* position: absolute so that text would align to bottom of div using bottom: 0*/
 .component-prayer_app_project_div_overlay_description_projects_page,
 .component-prayer_app_project_div_overlay_description {
     position: absolute;
@@ -116,10 +123,12 @@ a {
     margin-bottom: 4%;
 }
 
+/* To override other line-hight css on text */
 .component-prayer_app_project_div_overlay_description {
     line-height: inherit;
 }
 
+/* So link will not overextend div size */
 .component-prayer_app_project_div,
 .component-prayer_app_project_div_projects_page,
 .component-footer_background_color__email_border_color {
@@ -144,6 +153,7 @@ a {
     height: 280px;
 }
 
+/* to bring up cursor when on hover */
 .open_project_info {
     cursor: pointer;
 }
@@ -152,12 +162,14 @@ a {
     font-size: 27px;
 }
 
+/* Padding for animation and opacity to show it on hover */
 .component-prayer_app_project_div:hover .component-prayer_app_project_div_overlay,
 .component-prayer_app_project_div_projects_page:hover .component-prayer_app_project_div_overlay {
     opacity: 1;
     padding: 7% 5%;
 }
 
+/* margin-bottom for animation */
 .component-prayer_app_project_div:hover .component-prayer_app_project_div_overlay_description,
 .component-prayer_app_project_div_projects_page:hover .component-prayer_app_project_div_overlay_description_projects_page {
     margin-bottom: 7%;
@@ -295,15 +307,18 @@ h3 {
     color: #E6E6E6;
 }
 
+/* Important to override previous font-size css */
 .component-project_descriptions {
     font-size: 18px !important;
 }
 
+/* Important to override previous css */
 .component-div_margin__paragraph_margin,
 .component-project_title {
     margin-bottom: 5px !important;
 }
 
+/* Important to override previous css */
 .component-project_descriptions,
 .component-div_margin__paragraph_text_size {
     margin-bottom: 0px !important;
@@ -389,6 +404,7 @@ seperate divs on the page */
     width: 50%;
 }
 
+/* important to override previous css */
 .component-div_margin__specific_projects_pages {
     margin-bottom: 30px !important;
 }
@@ -613,6 +629,7 @@ a {
     .component-header__right-div {
         width: 50%;
     }
+    /* important to override previous css */
     .projects_link {
         margin-right: 0px !important;
     }
@@ -650,10 +667,13 @@ a {
     }
     .component-header__right-div {
         width: 75%;
-    }    
+    }
+    /* important to override previous css */
     .projects_link {
         margin-right: 25px !important;
     }
+    /* important to overide previous css
+    inline so that like will not extend outside bounds */
     #wider_screen_drop_down_menu_email {
         display: inline;
         margin-right: 0px !important;
@@ -726,6 +746,7 @@ a {
         width: 100%;
         margin-top: 0px;
     }
+    /* important to override previous css */
     .component-project_descriptions {
         font-size: 23px !important;
     }
