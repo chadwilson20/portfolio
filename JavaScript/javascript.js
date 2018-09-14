@@ -40,6 +40,7 @@ function RemoveAllRanges(selection) {
     selection.removeAllRanges();
 }
 
+//This function closes the projects info if the window is resized.
 $(window).resize(function() {
     if($(".component-specific_projects_info_div_hidden").is(':visible')) {
         $(".component-specific_projects_info_div_hidden").slideUp(400);
@@ -126,15 +127,16 @@ $(document).ready(function() {
         $(".component-main_content").addClass("component-drop_down_menu_close_animation");
         $(".component-main_content").css({"pointer-events":"auto"});
     });
-    
+
+    //Opens up either the mobile view project info or the tablet view project info based on the screen size
     $(".open_project_info").click(function() {
         if(screen.width > 0 && screen.width <= 771)
-            {
-               $(".component-specific_projects_info_div_hidden").slideToggle(400); 
-            }
+        {
+            $(".component-specific_projects_info_div_hidden").slideToggle(400); 
+        }
         else 
-            {
-                $("#prayer_app_drop_down_menu_tablet_view").slideToggle(400);
-            }
+        {
+            $("#prayer_app_drop_down_menu_tablet_view").slideToggle(400);
+        }
     });
 });

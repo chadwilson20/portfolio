@@ -12,9 +12,10 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: normal;
 }
 
+/* This is to add spacing between the description and the description title
+on specific projects */
 h3 {
     margin-bottom: 12px;
-    color: #E6E6E6;
 }
 
 .component-div_margin__paragraph_description_text_size {
@@ -22,11 +23,17 @@ h3 {
     line-height: 23px;
 }
 
-h3, .component-div_margin__paragraph_text_size, .component-div_margin__paragraph_margin {
+h3, 
+.component-div_margin__paragraph_text_size, 
+.component-div_margin__paragraph_margin {
     font-size: 15px;
 }
 
-.component-div_margin__paragraph_text_size, .component-div_margin__paragraph_margin {
+.component-div_margin__paragraph_text_size, 
+.component-div_margin__paragraph_margin,
+.component-prayer_app_project_div_overlay_description_projects_page p,
+.component-footer_background_color__nav,
+.component-footer_background_color__p {
     line-height: 25px;
 }
 
@@ -45,7 +52,8 @@ h1 {
     font-size: 30px;
 }
 
-h2 {
+h2,
+.component-prayer_app_project_div_overlay_description {
     font-size: 20px;
 }
 
@@ -54,52 +62,98 @@ a {
     border-bottom: 1px solid white;
 }
 
-.component-project_title_link_margin {
-    margin-top: 20px;
+.component-prayer_app_project_div_overlay,
+.component-prayer_app_project_div,
+.component-prayer_app_project_div_projects_page,
+.component-prayer_app_project_div_on_specific_page,
+.component-prayer_app_project_div_on_specific_page_screenshots {
+    width: 100%;
+    background-color: #E6E6E6;
 }
 
-.component-prayer_app_project_div_overlay {
-    width: 100%;
-    height: 100%;
-    background-color: #E6E6E6;
+/* Not visible until the user makes it visible */
+.component-prayer_app_project_div_overlay,
+.component-drop_down_menu--variant-modifier {
     opacity: 0;
+}
+
+/* Trasition the animations on hover for .3s */
+.component-prayer_app_project_div_overlay,
+.component-prayer_app_project_div_overlay_description,
+.component-prayer_app_project_div_overlay_description_projects_page {
     transition: .3s;
+}
+
+/* To keep it within the bounds of its outer div */
+.component-prayer_app_project_div_overlay,
+.component-prayer_app_project_div_projects_page,
+.component-surrounding_div {
     position: relative;
+}
+
+/* box-sizing: border-box so padding would not increase the size of div */
+.component-prayer_app_project_div_overlay {
+    height: 100%;
     padding: 10% 5%;
     box-sizing: border-box;
 }
 
 .component-prayer_app_project_div_overlay_font_color,
-.component-prayer_app_project_div_overlay_description {
-    color: white;
+.component-prayer_app_project_div_overlay_description,
+.component-prayer_app_project_div_overlay_description_projects_page p,
+.component-footer_background_color__h2 {
+    color: #FFFFFF;
+}
+
+.component-header_green_bar,
+.component-prayer_app_project_div_overlay_divide {
+    height: 2px;
 }
 
 .component-prayer_app_project_div_overlay_divide {
-    background-color: white;
-    height: 2px;
+    background-color: #FFFFFF;
     width: 18px;
 }
 
+/* position: absolute so that text would align to bottom of div using bottom: 0*/
+.component-prayer_app_project_div_overlay_description_projects_page,
 .component-prayer_app_project_div_overlay_description {
-    font-size: 20px;
     position: absolute;
     bottom: 0;
     margin-bottom: 4%;
-    line-height: inherit;
-    transition: .3s;
 }
 
-.component-prayer_app_project_div {
-    background-color: #E6E6E6;
+/* To override other line-hight css on text */
+.component-prayer_app_project_div_overlay_description {
+    line-height: inherit;
+}
+
+/* So link will not overextend div size */
+.component-prayer_app_project_div,
+.component-prayer_app_project_div_projects_page,
+.component-footer_background_color__email_border_color {
     display: inline-block;
-    width: 100%;
-    height: 280px;
-    z-index: 1;
-    background-image: url(../Images/favico.ico);
+}
+
+.component-prayer_app_project_div,
+.component-prayer_app_project_div_projects_page,
+.component-prayer_app_project_div_on_specific_page {
+    background-image: url(../Images/favico.ico); 
+}
+
+.component-prayer_app_project_div,
+.component-prayer_app_project_div_projects_page,
+.component-prayer_app_project_div_on_specific_page,
+.component-prayer_app_project_div_on_specific_page_screenshots {
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.component-prayer_app_project_div {
+    height: 280px;
+}
+
+/* to bring up cursor when on hover */
 .open_project_info {
     cursor: pointer;
 }
@@ -108,72 +162,52 @@ a {
     font-size: 27px;
 }
 
-.component-prayer_app_project_div:hover .component-prayer_app_project_div_overlay {
-    opacity: 1;
-    padding: 7% 5%;
-}
-
-.component-prayer_app_project_div:hover .component-prayer_app_project_div_overlay_description {
-    margin-bottom: 7%;
-}
-
-.component-div_margin__specific_projects_pages_paragraphs_desktop_view {
-    margin-bottom: 30px;
-    margin-top: 5%;
-}
-
-.component-prayer_app_project_div_projects_page {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 400px;
-    background-color: #E6E6E6;
-    background-image: url(../Images/favico.ico);
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-}
-
-.component-prayer_app_project_div_overlay_description_projects_page {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 4%;
-    transition: .3s;
-}
-
-.component-prayer_app_project_div_overlay_description_projects_page p {
-    line-height: 25px;
-    color: white;
-    margin-bottom: 7px;
-    font-size: 22px;
-}
-
+/* Padding for animation and opacity to show it on hover */
+.component-prayer_app_project_div:hover .component-prayer_app_project_div_overlay,
 .component-prayer_app_project_div_projects_page:hover .component-prayer_app_project_div_overlay {
     opacity: 1;
     padding: 7% 5%;
 }
 
+/* margin-bottom for animation */
+.component-prayer_app_project_div:hover .component-prayer_app_project_div_overlay_description,
 .component-prayer_app_project_div_projects_page:hover .component-prayer_app_project_div_overlay_description_projects_page {
     margin-bottom: 7%;
 }
 
-.component-prayer_app_project_div_on_specific_page {
-    width: 100%;
+.component-div_margin__specific_projects_pages_first_div,
+.component-div_margin__specific_projects_pages_paragraphs_desktop_view {
+    margin-bottom: 30px;
+}
+
+.component-div_margin__specific_projects_pages_paragraphs_desktop_view {
+    margin-top: 5%;
+}
+
+.component-prayer_app_project_div_projects_page {
+    height: 400px;
+}
+
+.component-prayer_app_project_div_overlay_description_projects_page p,
+.component-footer_background_color__first_h2_margin {
+    margin-bottom: 7px;
+}
+
+.component-prayer_app_project_div_overlay_description_projects_page p {
+    font-size: 22px;
+}
+
+.component-prayer_app_project_div_on_specific_page,
+.component-prayer_app_project_div_on_specific_page_screenshots {
     height: 160px;
-    background-color: #E6E6E6;
-    background-image: url(../Images/favico.ico);
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.component-prayer_app_project_div_on_specific_page {
     background-size: 200px 200px;
     margin-top: 40px;
 }
 
 .component-prayer_app_project_div_on_specific_page_screenshots {
-    width: 100%;
-    background-color: #E6E6E6;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 160px;
     background-size: 35% 95%;
 }
 
@@ -190,7 +224,8 @@ a {
 #component-prayer_app_project_div_on_specific_page_screenshot_twelve,
 #component-prayer_app_project_div_on_specific_page_screenshot_thirteen,
 #component-prayer_app_project_div_on_specific_page_screenshot_fourteen,
-#component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
+#component-prayer_app_project_div_on_specific_page_screenshot_fifteen,
+.component-project_title_link_margin {
     margin-top: 20px;
 }
 
@@ -199,9 +234,13 @@ a {
     margin-top: 80px;
 }
 
+#component-prayer_app_project_div_on_specific_page_screenshot_two,
+#component-prayer_app_project_div_on_specific_page_screenshot_fourteen {
+    background-size: 25% 95%;
+}
+
 #component-prayer_app_project_div_on_specific_page_screenshot_two {
     background-image: url(../Images/Prayer_App_Screenshots/Signup_Page_Form.JPG);
-    background-size: 25% 95%;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_three {
@@ -250,7 +289,6 @@ a {
 
 #component-prayer_app_project_div_on_specific_page_screenshot_fourteen {
     background-image: url(../Images/Prayer_App_Screenshots/Edit_Profile_Page.JPG);
-    background-size: 25% 95%;
 }
 
 #component-prayer_app_project_div_on_specific_page_screenshot_fifteen {
@@ -264,36 +302,32 @@ a {
 .component-footer_background_color__a,
 #wider_screen_drop_down_menu_email,
 .component-div_margin_h2_after_description,
-.component-project_descriptions {
+.component-project_descriptions,
+h3 {
     color: #E6E6E6;
 }
 
+/* Important to override previous font-size css */
 .component-project_descriptions {
     font-size: 18px !important;
 }
 
-.component-div_margin__paragraph_margin {
+/* Important to override previous css */
+.component-div_margin__paragraph_margin,
+.component-project_title {
     margin-bottom: 5px !important;
 }
 
+/* Important to override previous css */
 .component-project_descriptions,
 .component-div_margin__paragraph_text_size {
     margin-bottom: 0px !important;
 }
 
-.component-project_title {
-    margin-bottom: 5px !important;
-}
-
 #green_email_two,
-.component-footer_background_color__a {
+.component-footer_background_color__a,
+.component-footer_background_color__p:hover {
     border-bottom-color: #34302D;
-}
-
-#test {
-    width: 100%;
-    height: 100px;
-    background-color: grey;
 }
 
 .component-footer_background_color__h2_after_first {
@@ -302,7 +336,8 @@ a {
 
 /* #component-description_div__h2 has this to create more spacing
 in the intro */
-p, #component-description_div__h2 {
+p, 
+#component-description_div__h2 {
     line-height: 30px;
 }
 
@@ -320,24 +355,8 @@ nav {
 }
 
 /* To create overlay effect with drop-down menu */
-.component-surrounding_div {
-    position: relative;
-}
-
-/* To create overlay effect with drop-down menu 
-TEST FIRST BEFORE DELETING
-.component-drop_down_menu--variant-modifier,
-.component-main_content {
-top: 0;
-left: 0;
-}
-*/
-
-/* To create overlay effect with drop-down menu */
 .component-drop_down_menu--variant-modifier {
-    opacity: 0;
     margin: 4% 5% 5% 5%;
-    z-index: 10;
     position: fixed;
     pointer-events: none;
 }
@@ -346,18 +365,12 @@ left: 0;
 .component-drop_down_menu--variant-modifier,
 .component-div_margin__header_div,
 .wider_screen_footer_div_flex,
-.component-specific_projects_info_div {
+.component-specific_projects_info_div,
+#prayer_app_drop_down_menu_tablet_view {
     display: flex;
 }
 
-/* To create overlay effect with drop-down menu 
-TEST FIRST BEFORE DELETING
-.component-main_content {
-position: absolute;
-}
-*/
-
-.component-header__left-div__nav > a {
+nav a {
     font-size: 23px;
 }
 
@@ -372,12 +385,16 @@ a:hover,
 
 /* To create spacing between borders of webpage and spacing inbetween 
 seperate divs on the page */
-.component-div_margin {
+.component-div_margin,
+.component-div_margin_header_specific_projects_page {
     margin: 5% 5% 120px 5%;
 }
 
-#prayer_app_drop_down_menu_tablet_view {
-    display: flex;
+#prayer_app_drop_down_menu_tablet_view,
+.component-specific_projects_info_div_hidden,
+.component-div_margin__specific_projects_pages_last_div,
+.component-div_margin__specific_projects_pages_first_div_right_tablet_view,
+.component-div_margin__projects_desktop_view_left_div {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -387,42 +404,30 @@ seperate divs on the page */
     width: 50%;
 }
 
+/* important to override previous css */
 .component-div_margin__specific_projects_pages {
     margin-bottom: 30px !important;
 }
 
-.component-div_margin__specific_projects_pages_first_div {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.component-div_margin__specific_projects_pages_last_div {
-    margin-bottom: 0px;
-}
-
+.component-div_margin__specific_projects_pages_first_div,
 .component-div_margin__specific_projects_pages_first_div_right_tablet_view {
     margin-top: 30px;
-    margin-bottom: 0px;
 }
 
-.component-specific_projects_info_div_hidden {
-    margin-top: 0px;
-    margin-bottom: 0px;
+.component-div_margin__projects_desktop_view_left_div,
+.component-div_margin__projects_desktop_view_right_div {
+    margin-top: 10px;
 }
 
 .component-div_margin__projects_desktop_view_left_div {
-    margin-top: 10px;
-    margin-bottom: 0px;
     width: 25%;
 }
 
 .component-div_margin__projects_desktop_view_right_div {
-    margin-top: 10px;
     width: 75%;
 }
 
 .component-header_green_bar {
-    height: 2px;
     background-color: #86C543;
 }
 
@@ -449,12 +454,6 @@ seperate divs on the page */
     padding: 50px 5% 40px 5%;
 }
 
-/* border-bottom-color to blend in color before clicking on it.
-display: inline-block to create the margin-botton I needed to seperate content */
-.component-footer_background_color__email_border_color {
-    display: inline-block;
-}
-
 /* To add spacing between different sections in the footer */
 .component-footer_background_color__div {
     margin-bottom: 50px;
@@ -466,10 +465,6 @@ display: inline-block to create the margin-botton I needed to seperate content *
     width: 70%;
 }
 
-.component-footer_background_color__h2 {
-    color: #FFFFFF;
-}
-
 /* the headers after the first one in the footer needed more margin */
 .component-footer_background_color__h2_after_first {
     margin-bottom: 15px;
@@ -478,18 +473,6 @@ display: inline-block to create the margin-botton I needed to seperate content *
 /* To remove default margin-bottom styling on normal paragraphs */
 .component-footer_background_color__p {
     margin-bottom: 0;
-}
-
-/* first header did not need as much margin as the rest */
-.component-footer_background_color__first_h2_margin {
-    margin-bottom: 7px;
-}
-
-/* Not as much line-height needed compared to other navs on this page */
-/* line-height on .component-footer_background_color__p to add spacing rather than margin-bottom */
-.component-footer_background_color__nav,
-.component-footer_background_color__p {
-    line-height: 25px;
 }
 
 /* So these animations do not repeat */
@@ -605,11 +588,6 @@ a {
     border-bottom-color: #E6E6E6 !important;
 }
 
-/* Added this because it shares same class as .component-footer_background_color__a */
-.component-footer_background_color__p:hover {
-    border-bottom-color: #34302D;
-}
-
 /* !important to remove default styling from regular a:hover */
 #green_email_two:hover {
     border-bottom-color: #86C543 !important;
@@ -647,12 +625,11 @@ a {
     .open_menu_div {
         display: none;
     }
-    .component-header__left-div {
-        width: 50%;
-    }
+    .component-header__left-div,
     .component-header__right-div {
         width: 50%;
     }
+    /* important to override previous css */
     .projects_link {
         margin-right: 0px !important;
     }
@@ -690,10 +667,13 @@ a {
     }
     .component-header__right-div {
         width: 75%;
-    }    
+    }
+    /* important to override previous css */
     .projects_link {
         margin-right: 25px !important;
     }
+    /* important to overide previous css
+    inline so that like will not extend outside bounds */
     #wider_screen_drop_down_menu_email {
         display: inline;
         margin-right: 0px !important;
@@ -737,13 +717,17 @@ a {
 }
 
 @media only screen and (min-width: 1000px) {
-    .wider_screen_footer_div {
+    .wider_screen_footer_div,
+    .component-project_and_title_div,
+    .component-div_margin__specific_projects_page_mobile_view {
         display: none;
     }
-    .widest_screen_footer_div {
+    .widest_screen_footer_div,
+    .component-div_margin__specific_projects_page_desktop_view {
         display: flex;
     }
-    .wider_screen_footer_div_flex {
+    .wider_screen_footer_div_flex,
+    .component-div_width {
         width: 60%;
     }
     .component-footer_background_color__div {
@@ -755,25 +739,14 @@ a {
     .component-footer_background_color__first_div {
         width: 30%;
     }
-    .component-div_width {
-        width: 60%;
-    }
-    .component-project_and_title_div {
-        display: none;
-    }
     .component-prayer_app_project_div {
         height: 400px;
-    }
-    .component-div_margin__specific_projects_page_mobile_view {
-        display: none;
-    }
-    .component-div_margin__specific_projects_page_desktop_view {
-        display: flex;
     }
     .component-prayer_app_project_div_on_specific_page {
         width: 100%;
         margin-top: 0px;
     }
+    /* important to override previous css */
     .component-project_descriptions {
         font-size: 23px !important;
     }
@@ -786,5 +759,23 @@ a {
     .component-prayer_app_project_div,
     .component-prayer_app_project_div_projects_page {
         width: 540px;
+    }
+    .component-div_margin__specific_projects_page_desktop_view,
+    .component-div_margin_header_specific_projects_page {
+        margin-top: 53px;
+    }
+    .component-desktop_view_margin,
+    .component-div_margin__specific_projects_page_desktop_view,
+    .component-div_margin_header_specific_projects_page {
+        width: 1062px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .component-div_width {
+        width: 100%;
+    }
+    .component-div_margin {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
