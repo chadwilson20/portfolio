@@ -370,7 +370,7 @@ nav {
     display: flex;
 }
 
-nav a {
+.component-header__left-div__nav a {
     font-size: 23px;
 }
 
