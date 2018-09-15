@@ -45,7 +45,7 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
     }
     .intro_div {
         @include responsive-text-height(margin-top, 367px, 477px, 0%, 5%);
-        @include responsive-text-height(margin-bottom, 626px, 3000px, 120px, 1700px);
+        @include responsive-text-height(margin-bottom, 626px, 3000px, 180px, 1700px);
     }
 }
 

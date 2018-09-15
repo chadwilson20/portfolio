@@ -23,7 +23,7 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
     margin-top: 5%; } }
 @media only screen and (max-width: 1000px) and (min-height: 626px) {
   .intro_div {
-    margin-bottom: calc(120px + 1580 * (100vh - 626px) / 2374); } }
+    margin-bottom: calc(180px + 1520 * (100vh - 626px) / 2374); } }
 @media only screen and (max-width: 1000px) and (min-height: 3000px) {
   .intro_div {
     margin-bottom: 1700px; } }
