@@ -10,10 +10,10 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
     margin-bottom: 130px; } }
 @media only screen and (max-width: 1000px) and (min-height: 626px) {
   .header_margin {
-    margin-bottom: calc(130px + 570 * (100vh - 626px) / 1294); } }
-@media only screen and (max-width: 1000px) and (min-height: 1920px) {
+    margin-bottom: calc(130px + 1170 * (100vh - 626px) / 2374); } }
+@media only screen and (max-width: 1000px) and (min-height: 3000px) {
   .header_margin {
-    margin-bottom: 700px; } }
+    margin-bottom: 1300px; } }
 
 @media only screen and (max-width: 1000px) and (min-height: 367px) {
   .intro_div {
@@ -21,6 +21,12 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 @media only screen and (max-width: 1000px) and (min-height: 477px) {
   .intro_div {
     margin-top: 5%; } }
+@media only screen and (max-width: 1000px) and (min-height: 626px) {
+  .intro_div {
+    margin-bottom: calc(120px + 1580 * (100vh - 626px) / 2374); } }
+@media only screen and (max-width: 1000px) and (min-height: 3000px) {
+  .intro_div {
+    margin-bottom: 1700px; } }
 
 @media only screen and (min-width: 1000px) and (min-height: 478px) {
   .header_margin {
@@ -30,10 +36,10 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
     margin-bottom: 120px; } }
 @media only screen and (min-width: 1000px) and (min-height: 626px) {
   .header_margin {
-    margin-bottom: calc(120px + 580 * (100vh - 626px) / 1294); } }
-@media only screen and (min-width: 1000px) and (min-height: 1920px) {
+    margin-bottom: calc(120px + 980 * (100vh - 626px) / 2374); } }
+@media only screen and (min-width: 1000px) and (min-height: 3000px) {
   .header_margin {
-    margin-bottom: 700px; } }
+    margin-bottom: 1100px; } }
 
 @media only screen and (min-width: 1000px) and (min-height: 478px) {
   .intro_div {
@@ -41,6 +47,12 @@ https://www.sassmeister.com/gist/7f22e44ace49b5124eec */
 @media only screen and (min-width: 1000px) and (min-height: 625px) {
   .intro_div {
     margin-top: 5%; } }
+@media only screen and (min-width: 1000px) and (min-height: 626px) {
+  .intro_div {
+    margin-bottom: calc(120px + 1580 * (100vh - 626px) / 2374); } }
+@media only screen and (min-width: 1000px) and (min-height: 3000px) {
+  .intro_div {
+    margin-bottom: 1700px; } }
 
 @media (min-width: 373px) {
   #component-description_div__h2 {
