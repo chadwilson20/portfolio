@@ -141,7 +141,13 @@ a {
     background-image: url(../Images/favico.ico); 
 }
 
+#component-3dprint_styling {
+    background-image: url(../Images/3DPrint_Club_Banner.png);
+    background-size: 300px 100px;
+}
+
 .component-prayer_app_project_div,
+#component-3dprint_styling,
 .component-prayer_app_project_div_projects_page,
 .component-prayer_app_project_div_on_specific_page,
 .component-prayer_app_project_div_on_specific_page_screenshots {
@@ -381,6 +387,10 @@ because otherwise it would not work */
 a:hover,
 #wider_screen_drop_down_menu_email:hover {
     color: #86C543;
+}
+
+#component-div_index_page_project_section_display_flex_desktop_view {
+    display: none;
 }
 
 /* To create spacing between borders of webpage and spacing inbetween 
@@ -655,6 +665,12 @@ a {
     }
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .component-prayer_app_project_div {
+        margin-bottom: 30px;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
     .component-prayer_app_project_div {
         height: calc(280px + 40 * (100vw - 768px) / 232); 
@@ -756,9 +772,18 @@ a {
 }
 
 @media only screen and (min-width: 1200px) {
-    .component-prayer_app_project_div,
     .component-prayer_app_project_div_projects_page {
         width: 540px;
+    }
+    #component-div_index_page_project_section_display_flex_desktop_view {
+        display: flex;
+        justify-content: space-between;
+    }
+    #component-div_index_page_project_section_display_block_mobile_view {
+        display: none;
+    }
+    .component-prayer_app_project_div {
+        width: 510px;
     }
     .component-div_margin__specific_projects_page_desktop_view,
     .component-div_margin_header_specific_projects_page {

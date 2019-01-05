@@ -1,0 +1,305 @@
+<!-- Design inspiration courtesy of Timmy O'Mahony from his portfolio website. Here is the link to it:
+http://www.colourlovers.com/web/trends/websites/7853/KICKSTARTER -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- This is so viewing website is scaled well on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- This is where I am getting all my icons from -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+        <!-- Image by fontawesome.com. Here is link to image: https://fontawesome.com/icons/project-diagram?style=solid -->
+        <link rel="icon" href="Images/project-diagram-solid.png">
+        <!-- To remove default browser styling -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+        <!-- My style sheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- My Sass style sheet -->
+        <link rel="stylesheet" href="css/sass_style.css">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- My script -->
+        <script src="JavaScript/javascript.js"></script>
+        <title>3D Print Club Website</title>
+    </head>
+    <body>
+        <!-- Div container to create drop-down menu overlay functionality for mobile view -->
+        <div class="component-surrounding_div">
+            <!-- Drop-down menu -->
+            <div class="component-drop_down_menu--variant-modifier menu">
+                <!-- Mobile view navigation -->
+                <div class="component-header__left-div">
+                    <nav class="component-header__left-div__nav">
+                        <a href="index.html">About</a>
+                        <a href="projects.html" class="component-header__left-div__nav_active_a">Projects</a>
+                        <a href="javascript:;" id="drop_down_menu_email" onclick="CopyEmail('drop_down_menu_email')">chadwilson959@yahoo.com</a>
+                    </nav>
+                </div>
+                <!-- Exit button -->
+                <div class="component-header__right-div">
+                    <i class="fas fa-times fa-3x close_menu"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="component-main_content">
+            <!-- Green Bar -->
+            <div class="component-header_green_bar"></div> 
+            <header class="header_margin component-div_margin__specific_projects_pages component-div_margin_header_specific_projects_page">
+                <div class="component-div_margin__header_div">
+                    <div class="component-header__left-div">
+                        <h1>Chad Wilson</h1>
+                    </div>
+                    <!-- Open menu button -->
+                    <div class="component-header__right-div open_menu_div">
+                        <i class="fas fa-bars fa-2x open_menu"></i>
+                    </div>
+                    <!-- Tablet and desktop navigation view -->
+                    <div class="component-header__right-div wider_screen_size_header_navigation">
+                        <div class="wider_screen_size_header_navigation_nav">
+                            <a href="index.html">About</a>
+                            <a href="projects.html" class="projects_link component-header__left-div__nav_active_a">Projects</a>
+                            <a href="javascript:;" id="wider_screen_drop_down_menu_email" onclick="CopyEmail('wider_screen_drop_down_menu_email')">chadwilson959@yahoo.com</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--Mobile/Tablet View-->
+            <article class="component-div_margin__specific_projects_page_mobile_view">
+                <section>
+                    <div class="component-div_margin component-specific_projects_info_div component-div_margin__specific_projects_pages_last_div">
+                        <div class="component-header__left-div_prayer_app">
+                            <h2 class="component-project_title">3D Print Club Website</h2>
+                            <p class="component-project_descriptions">CSU Chico</p>
+                        </div>
+                        <div class="component-header__right-div_prayer_app">
+                            <i class="fas fa-angle-down fa-3x open_project_info"></i>
+                        </div>
+                    </div>
+                </section>
+                <!--Mobile view info-->
+                <section class="component-specific_projects_info_div_hidden component-div_margin">
+                    <div class="component-div_margin__specific_projects_pages_first_div">
+                        <h3>Year</h3>
+                        <p class="component-div_margin__paragraph_text_size">2018</p>
+                    </div>
+                    <div class="component-div_margin__specific_projects_pages">
+                        <h3>Category</h3>
+                        <p class="component-div_margin__paragraph_text_size">School Work</p>
+                    </div>
+                    <div class="component-div_margin__specific_projects_pages_last_div">
+                        <h3>Disciplines</h3>
+                        <p class="component-div_margin__paragraph_margin">Frontend Development</p>
+                        <p class="component-div_margin__paragraph_text_size">Maintenance</p>
+                    </div>
+                </section>
+                <!--Tablet view info-->
+                <section class="component-div_margin" id="prayer_app_drop_down_menu_tablet_view" style="display:none">
+                    <div class="prayer_app_drop_down_menu_tablet_view_left_div">
+                        <div class="component-div_margin__specific_projects_pages_first_div">
+                            <h3>Year</h3>
+                            <p class="component-div_margin__paragraph_text_size">2018</p>
+                        </div>
+                        <div class="component-div_margin__specific_projects_pages_last_div">
+                            <h3>Category</h3>
+                            <p class="component-div_margin__paragraph_text_size">School Work</p>
+                        </div>
+                    </div>
+                    <div class="prayer_app_drop_down_menu_tablet_view_right_div">
+                        <div class="component-div_margin__specific_projects_pages_first_div_right_tablet_view">
+                            <h3>Disciplines</h3>
+                            <p class="component-div_margin__paragraph_margin">Frontend Development</p>
+                            <p class="component-div_margin__paragraph_text_size">Maintenance</p>
+                        </div>
+                    </div>
+                </section>
+                <!--Project description-->
+                <section>
+                    <div class="component-div_margin component-div_margin__specific_projects_pages">
+                        <div class="component-prayer_app_project_div_on_specific_page" id="component-3dprint_styling">
+                        </div>
+                    </div>
+                    <div class="component-div_margin component-div_width component-div_margin__specific_projects_pages">
+                        <p class="component-div_margin__paragraph_description_text_size">CSU Chico is a California State University in Chico, CA that I attented for four and a half years. I recieved my Bachelor of Science in Computer Animation and Game Development with a minor in Computer Science when I graduated from this university in December 2018.</p>
+                        <p class="component-div_margin__paragraph_description_text_size">During my time there, I took a class in my last semster called Software Engineering, in which me and three other people in the class worked on the 3D Printing Club's website for the entire semester. Our main task was to convert their front-end from regular HTML, CSS and JavaScript over to React.js, but we also were in charge of making sure that users could submit 3D parts to be printed by the 3D Printing Club and that the website would give an estimate of how long it would take to print and how much it would cost. We also were in charge of implementing a way for users to pay for that part either through PayPal or by bringing cash to the club when it is ready.</p>
+                        <p class="component-div_margin__paragraph_description_text_size">We were able to accomplish all of these goals during the semester, as well as being able to write tests that make sure that most of our website is working. However, the website is still not deployed yet; we are still working on getting the website deployed soon. For now, here are some screenshots of what the website looks like.</p>
+                    </div>
+                </section>
+                <!--Project Screenshots-->
+                <section class="component-div_margin">
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_one" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_two" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_three" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_four" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_five" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_six" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_seven" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_eight" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_nine" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_ten" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_eleven" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_twelve" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_thirteen" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_fourteen" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_fifteen" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                </section>
+            </article>
+            <!--Desktop View-->
+            <article class="component-div_margin__specific_projects_page_desktop_view component-div_margin_header_specific_projects_page">
+                <section class="component-div_margin__projects_desktop_view_left_div">
+                    <div class="component-div_margin__specific_projects_pages">
+                        <h2 class="component-project_title">3D Print Club Website</h2>
+                        <p class="component-project_descriptions">CSU Chico</p>
+                    </div>
+                    <div class="component-div_margin__specific_projects_pages">
+                        <h3>Year</h3>
+                        <p class="component-div_margin__paragraph_text_size">2018</p>
+                    </div>
+                    <div class="component-div_margin__specific_projects_pages">
+                        <h3>Category</h3>
+                        <p class="component-div_margin__paragraph_text_size">School Work</p>
+                    </div>
+                    <div class="component-div_margin__specific_projects_pages_last_div">
+                        <h3>Disciplines</h3>
+                        <p class="component-div_margin__paragraph_margin">Frontend Development</p>
+                        <p class="component-div_margin__paragraph_text_size">Maintenance</p>
+                    </div>
+                </section>
+                <!--Project description and screenshots-->
+                <section class="component-div_margin__projects_desktop_view_right_div">
+                    <div class="component-div_margin__specific_projects_pages">
+                        <div class="component-prayer_app_project_div_on_specific_page" id="component-3dprint_styling">
+                        </div>
+                    </div>
+                    <div class="component-div_margin__specific_projects_pages_paragraphs_desktop_view">
+                        <p class="component-div_margin__paragraph_description_text_size">CSU Chico is a California State University in Chico, CA that I attented for four and a half years. I recieved my Bachelor of Science in Computer Animation and Game Development with a minor in Computer Science when I graduated from this university in December 2018.</p>
+                        <p class="component-div_margin__paragraph_description_text_size">During my time there, I took a class in my last semster called Software Engineering, in which me and three other people in the class worked on the 3D Printing Club's website for the entire semester. Our main task was to convert their front-end from regular HTML, CSS and JavaScript over to React.js, but we also were in charge of making sure that users could submit 3D parts to be printed by the 3D Printing Club and that the website would give an estimate of how long it would take to print and how much it would cost. We also were in charge of implementing a way for users to pay for that part either through PayPal or by bringing cash to the club when it is ready.</p>
+                        <p class="component-div_margin__paragraph_description_text_size">We were able to accomplish all of these goals during the semester, as well as being able to write tests that make sure that most of our website is working. However, the website is still not deployed yet; we are still working on getting the website deployed soon. For now, here are some screenshots of what the website looks like.</p>
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_one" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_two" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_three" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_four" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_five" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_six" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_seven" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_eight" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_nine" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_ten" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_eleven" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_twelve" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_thirteen" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_fourteen" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                    <div id="component-prayer_app_project_div_on_specific_page_screenshot_fifteen" class="component-prayer_app_project_div_on_specific_page_screenshots">
+                    </div>
+                </section>
+            </article>
+            <!--Footer-->
+            <footer class="component-footer_background_color">
+                <div class="component-desktop_view_margin">
+                    <div class="component-footer_background_color__first_div">
+                        <h2 class="component-footer_background_color__h2 component-footer_background_color__first_h2_margin">Chad Wilson</h2>
+                        <a href="javascript:;" class="component-div_margin__email_color component-footer_background_color__email_border_color" id="green_email_two" onclick="CopyEmail('green_email_two')">chadwilson959@yahoo.com</a>
+                        <p class="component-footer_background_color__a component-footer_background_color__p">I use my front-end web development skills to create beautiful and efficent websites.</p>
+                    </div>
+                    <!-- Mobile view footer -->
+                    <div class="mobile_footer_div">
+                        <div class="component-footer_background_color__div">
+                            <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Menu</h2>
+                            <nav class="component-footer_background_color__nav">
+                                <a href="index.html" class="component-footer_background_color__a">About</a>
+                                <a href="projects.html" class="component-footer_background_color__a">Projects</a>
+                            </nav>
+                        </div>
+                        <div class="component-footer_background_color__div">
+                            <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Contact</h2>
+                            <a href="javascript:;" class="component-footer_background_color__a" id="grey_email_one" onclick="CopyEmail('grey_email_one')">chadwilson959@yahoo.com</a>
+                        </div>
+                        <div>
+                            <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Social</h2>
+                            <nav class="component-footer_background_color__nav">
+                                <a href="https://www.linkedin.com/in/chad-wilson-b35160b6/" target="_blank" class="component-footer_background_color__a">Linkedin</a>
+                                <a href="https://github.com/chadwilson20" target="_blank" class="component-footer_background_color__a">GitHub</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Tablet view footer -->
+                    <div class="wider_screen_footer_div">
+                        <div class="wider_screen_footer_div_flex">
+                            <div class="component-footer_background_color__div">
+                                <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Menu</h2>
+                                <nav class="component-footer_background_color__nav">
+                                    <a href="index.html" class="component-footer_background_color__a">About</a>
+                                    <a href="projects.html" class="component-footer_background_color__a">Projects</a>
+                                </nav>
+                            </div>
+                            <div class="component-footer_background_color__div">
+                                <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first contact_header">Contact</h2>
+                                <a href="javascript:;" class="component-footer_background_color__a" id="grey_email_two" onclick="CopyEmail('grey_email_two')">chadwilson959@yahoo.com</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Social</h2>
+                            <nav class="component-footer_background_color__nav">
+                                <a href="https://www.linkedin.com/in/chad-wilson-b35160b6/" target="_blank" class="component-footer_background_color__a">Linkedin</a>
+                                <a href="https://github.com/chadwilson20" target="_blank" class="component-footer_background_color__a">GitHub</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Desktop view footer -->
+                    <div class="widest_screen_footer_div">
+                        <div class="wider_screen_footer_div_flex">
+                            <div class="component-footer_background_color__div">
+                                <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Menu</h2>
+                                <nav class="component-footer_background_color__nav">
+                                    <a href="index.html" class="component-footer_background_color__a">About</a>
+                                    <a href="projects.html" class="component-footer_background_color__a">Projects</a>
+                                </nav>
+                            </div>
+                            <div class="component-footer_background_color__div">
+                                <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first contact_header">Contact</h2>
+                                <a href="javascript:;" class="component-footer_background_color__a" id="grey_email_three" onclick="CopyEmail('grey_email_three')">chadwilson959@yahoo.com</a>
+                            </div>
+                        </div>
+                        <div class="social_div_width">
+                            <h2 class="component-footer_background_color__h2 component-footer_background_color__h2_after_first">Social</h2>
+                            <nav class="component-footer_background_color__nav">
+                                <a href="https://www.linkedin.com/in/chad-wilson-b35160b6/" target="_blank" class="component-footer_background_color__a">Linkedin</a>
+                                <a href="https://github.com/chadwilson20" target="_blank" class="component-footer_background_color__a">GitHub</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

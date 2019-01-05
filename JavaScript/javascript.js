@@ -50,6 +50,11 @@ $(window).resize(function() {
     }
 });
 
+//This function sets webpage back to the top on refresh
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
+
 $(document).ready(function() {
     /* This function changes styling of links when they are clicked */
     $("a").click(function() {
