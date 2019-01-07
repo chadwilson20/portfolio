@@ -301,8 +301,78 @@ a {
     background-image: url(../Images/Prayer_App_Screenshots/Report_A_Problem_Page.JPG);
 }
 
+#component-3d_print_club_website_div_on_specific_page_screenshot_one,
+#component-3d_print_club_website_div_on_specific_page_screenshot_two,
+#component-3d_print_club_website_div_on_specific_page_screenshot_three,
+#component-3d_print_club_website_div_on_specific_page_screenshot_four,
+#component-3d_print_club_website_div_on_specific_page_screenshot_five,
+#component-3d_print_club_website_div_on_specific_page_screenshot_six,
+#component-3d_print_club_website_div_on_specific_page_screenshot_seven,
+#component-3d_print_club_website_div_on_specific_page_screenshot_eight,
+#component-3d_print_club_website_div_on_specific_page_screenshot_nine,
+#component-3d_print_club_website_div_on_specific_page_screenshot_ten {
+    background-size: 95% 95%;
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_two,
+#component-3d_print_club_website_div_on_specific_page_screenshot_three,
+#component-3d_print_club_website_div_on_specific_page_screenshot_four,
+#component-3d_print_club_website_div_on_specific_page_screenshot_five,
+#component-3d_print_club_website_div_on_specific_page_screenshot_six,
+#component-3d_print_club_website_div_on_specific_page_screenshot_seven,
+#component-3d_print_club_website_div_on_specific_page_screenshot_eight,
+#component-3d_print_club_website_div_on_specific_page_screenshot_nine,
+#component-3d_print_club_website_div_on_specific_page_screenshot_ten {
+    margin-top: 20px;
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_one {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/About_Page.JPG);
+    margin-top: 80px;
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_two {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/FAQ_Page.JPG);
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_three {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/Part_Queue_Page_Empty_Queue.JPG);
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_four {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/Pick_A_Design_Page.JPG);
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_five {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/Sign_In_Page.JPG);
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_six {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/Submit_a_Part_Page.JPG);
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_seven {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/Change_Email_Page.JPG);
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_eight {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/Change_Password_Page.JPG);
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_nine {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/Submit_a_Part_Page.JPG);
+}
+
+#component-3d_print_club_website_div_on_specific_page_screenshot_ten {
+    background-image: url(../Images/3D_Print_Club_Website_Screenshots/Cart_Page.JPG);
+}
+
 #component-prayer_app_screenshots_section {
     margin-bottom: 120px;
+}
+
+.component-div_projects_spacing {
+    width: 45%;
 }
 
 .component-footer_background_color__a,
@@ -665,12 +735,6 @@ a {
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
-    .component-prayer_app_project_div {
-        margin-bottom: 30px;
-    }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
     .component-prayer_app_project_div {
         height: calc(280px + 40 * (100vw - 768px) / 232); 
@@ -734,7 +798,6 @@ a {
 
 @media only screen and (min-width: 1000px) {
     .wider_screen_footer_div,
-    .component-project_and_title_div,
     .component-div_margin__specific_projects_page_mobile_view {
         display: none;
     }
@@ -779,6 +842,7 @@ a {
         display: flex;
         justify-content: space-between;
     }
+    .component-project_and_title_div,
     #component-div_index_page_project_section_display_block_mobile_view {
         display: none;
     }
